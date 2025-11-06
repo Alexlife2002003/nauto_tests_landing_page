@@ -1,0 +1,310 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thundermans: Tu tienda de cómics favorita. Encuentra los mejores títulos y productos relacionados.">
+    <link rel="canonical" href="https://thundermans.com">
+    <meta property="og:title" content="Thundermans - Tienda de Cómics">
+    <meta property="og:description" content="Descubre una amplia variedad de cómics y productos en Thundermans.">
+    <meta property="og:image" content="https://thundermans.com/placeholder.jpg">
+    <meta property="og:url" content="https://thundermans.com">
+    <title>Roman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+        .cta {
+            background: #ff4081;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta:hover {
+            background: #ff1f6d;
+        }
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffefba, #ffffff);
+            padding: 2rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0.5rem 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+        .service {
+            text-align: center;
+        }
+        .clients {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .clients img {
+            margin: 0 1rem;
+            width: 80px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0;
+        }
+        form input, form select {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background: #ff4081;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        footer div {
+            flex: 1;
+            margin: 0 1rem;
+        }
+        .location {
+            margin: 2rem 0;
+            background: #e0e0e0;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        details {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Thundermans</h1>
+            <div>
+                <a href="#features">Características</a>
+                <a href="#services">Servicios</a>
+                <a href="#contact">Contacto</a>
+                <a href="#faq">FAQ</a>
+                <a class="cta" href="#contact">¡Compra Ahora!</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>¡Bienvenido a Thundermans!</h1>
+            <p>Tu tienda de cómics favorita con los mejores títulos y productos.</p>
+            <a class="cta" href="#contact">Explora Más</a>
+        </section>
+        <div class="container">
+            <section id="features">
+                <h2>Características</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Cómics Nuevos</h3>
+                        <ul>
+                            <li>Últimos lanzamientos</li>
+                            <li>Variedad de géneros</li>
+                            <li>Precios accesibles</li>
+                        </ul>
+                        <a class="cta" href="#">Ver Más</a>
+                    </div>
+                    <div class="card">
+                        <h3>Merchandising</h3>
+                        <ul>
+                            <li>Figuras de acción</li>
+                            <li>Ropa temática</li>
+                            <li>Accesorios únicos</li>
+                        </ul>
+                        <a class="cta" href="#">Ver Más</a>
+                    </div>
+                    <div class="card">
+                        <h3>Eventos</h3>
+                        <ul>
+                            <li>Firmas de autores</li>
+                            <li>Talleres de arte</li>
+                            <li>Conferencias</li>
+                        </ul>
+                        <a class="cta" href="#">Ver Más</a>
+                    </div>
+                </div>
+            </section>
+            <section id="services">
+                <h2>Servicios</h2>
+                <div class="services">
+                    <div class="service">
+                        <span>📦</span>
+                        <h3>Envío Rápido</h3>
+                        <p>Recibe tus cómics en la puerta de tu casa rápidamente.</p>
+                    </div>
+                    <div class="service">
+                        <span>💳</span>
+                        <h3>Pagos Seguros</h3>
+                        <p>Compra con confianza usando métodos de pago seguros.</p>
+                    </div>
+                    <div class="service">
+                        <span>🛍️</span>
+                        <h3>Devoluciones Fáciles</h3>
+                        <p>Si no estás satisfecho, te ayudamos a devolverlo.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="clients">
+                <h2>Clientes Satisfechos</h2>
+                <img src="https://via.placeholder.com/80" alt="Cliente 1">
+                <img src="https://via.placeholder.com/80" alt="Cliente 2">
+                <img src="https://via.placeholder.com/80" alt="Cliente 3">
+            </section>
+            <section id="contact">
+                <h2>Contacto</h2>
+                <form onsubmit="console.log('Formulario enviado'); return false;">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" required>
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" required>
+                    <label for="select">Selecciona un Producto:</label>
+                    <select id="select" required>
+                        <option value="">Selecciona...</option>
+                        <option value="comics">Cómics</option>
+                        <option value="merch">Merchandising</option>
+                    </select>
+                    <button type="submit">Enviar Consulta</button>
+                </form>
+            </section>
+            <section class="location">
+                <h2>Ubicación</h2>
+                <p>📍 Calle Ficticia 123, Ciudad, País</p>
+                <p>📞 (123) 456-7890</p>
+                <p>🕰️ Lunes a Viernes: 10am - 6pm</p>
+            </section>
+            <section id="faq">
+                <h2>Preguntas Frecuentes</h2>
+                <details>
+                    <summary>¿Hacen envíos internacionales?</summary>
+                    <p>Sí, realizamos envíos a varios países. Consulta nuestras tarifas.</p>
+                </details>
+                <details>
+                    <summary>¿Puedo devolver un producto?</summary>
+                    <p>Claro, tienes 30 días para devolver cualquier producto que no te satisfaga.</p>
+                </details>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h3>Thundermans</h3>
+            <p>Tu tienda de cómics favorita.</p>
+        </div>
+        <div>
+            <h3>Información</h3>
+            <p><a href="#">Política de Privacidad</a></p>
+            <p><a href="#">Términos y Condiciones</a></p>
+        </div>
+        <div>
+            <h3>Contacto</h3>
+            <p><a href="#contact">Contáctanos</a></p>
+        </div>
+        <div>
+            <h3>Redes Sociales</h3>
+            <p>
+                <a href="#"><svg width="24" height="24" fill="white"><circle cx="12" cy="12" r="10"/></svg></a>
+                <a href="#"><svg width="24" height="24" fill="white"><rect width="20" height="20" x="2" y="2"/></svg></a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+  <!-- Chatwoot -->
+  <script>
+    (function(d,t) {
+      var BASE_URL="https://app.chatwoot.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK && window.chatwootSDK.run({
+          websiteToken: "vdTKwXXuTyNw7QujBGyQ7K8n",
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+</body>
+</html>
