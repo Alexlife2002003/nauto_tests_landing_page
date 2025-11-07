@@ -1,0 +1,205 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thundermans - Tu tienda de cómics favorita. Explora nuestros títulos y descubre lo mejor del mundo del cómic.">
+    <link rel="canonical" href="https://thundermans.com">
+    <meta property="og:title" content="Thundermans">
+    <meta property="og:description" content="Tu tienda de cómics favorita.">
+    <meta property="og:url" content="https://thundermans.com">
+    <title>nauto</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        header { position: sticky; top: 0; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; }
+        nav { display: flex; justify-content: space-between; padding: 1rem; }
+        nav a { text-decoration: none; color: #007BFF; padding: 0.5rem; }
+        .hero { height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(to bottom, #f0f0f0, #e0e0e0); text-align: center; }
+        .hero h1 { font-size: 3rem; margin: 0; }
+        .hero p { font-size: 1.5rem; margin: 0.5rem 0 1.5rem; }
+        .cta { background: #007BFF; color: white; padding: 1rem 2rem; border: none; border-radius: 25px; cursor: pointer; transition: all 0.3s; }
+        .cta:hover { box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem; }
+        .card { background: white; border-radius: 15px; padding: 1.5rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .services { display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .service { flex: 1 1 calc(33% - 1rem); margin: 0.5rem; background: #f9f9f9; border-radius: 10px; padding: 1rem; }
+        .social-proof { display: flex; justify-content: center; margin: 2rem 0; }
+        footer { background: #333; color: white; padding: 2rem 0; }
+        footer div { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; }
+        form { display: flex; flex-direction: column; gap: 1rem; }
+        input, select { padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; }
+        .faq { margin: 2rem 0; }
+        details { margin-bottom: 1rem; }
+        .location { margin: 2rem 0; }
+        .location-row { display: flex; align-items: center; }
+        .location-row span { margin-right: 0.5rem; }
+        @media (max-width: 768px) {
+            .services { flex-direction: column; }
+            .service { flex: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div><a href="#hero">Inicio</a><a href="#features">Características</a><a href="#services">Servicios</a><a href="#contact">Contacto</a></div>
+        <button class="cta" onclick="console.log('CTA Clicked!')">Compra Ahora</button>
+    </nav>
+</header>
+
+<section id="hero" class="hero">
+    <h1>Thundermans</h1>
+    <p>Tu tienda de cómics favorita.</p>
+    <button class="cta" onclick="console.log('Hero CTA Clicked!')">Explora Nuestros Títulos</button>
+</section>
+
+<div class="container">
+    <section id="features">
+        <h2>Características</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Título 1</h3>
+                <ul>
+                    <li>Descripción breve 1</li>
+                    <li>Descripción breve 2</li>
+                    <li><button class="cta">Ver Más</button></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Título 2</h3>
+                <ul>
+                    <li>Descripción breve 1</li>
+                    <li>Descripción breve 2</li>
+                    <li><button class="cta">Ver Más</button></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Título 3</h3>
+                <ul>
+                    <li>Descripción breve 1</li>
+                    <li>Descripción breve 2</li>
+                    <li><button class="cta">Ver Más</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="services">
+            <div class="service">
+                <span>📚</span>
+                <h3>Servicio 1</h3>
+                <p>Descripción breve del servicio 1.</p>
+            </div>
+            <div class="service">
+                <span>📦</span>
+                <h3>Servicio 2</h3>
+                <p>Descripción breve del servicio 2.</p>
+            </div>
+            <div class="service">
+                <span>💬</span>
+                <h3>Servicio 3</h3>
+                <p>Descripción breve del servicio 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <h2>Clientes</h2>
+        <p>Logos de clientes aquí.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="service">Selecciona un Servicio:</label>
+            <select id="service" name="service">
+                <option value="servicio1">Servicio 1</option>
+                <option value="servicio2">Servicio 2</option>
+                <option value="servicio3">Servicio 3</option>
+            </select>
+            <button class="cta" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <details>
+            <summary>¿Cuál es el horario de atención?</summary>
+            <p>Nuestro horario es de lunes a viernes de 10:00 a 18:00.</p>
+        </details>
+        <details>
+            <summary>¿Hacen envíos?</summary>
+            <p>Sí, realizamos envíos a todo el país.</p>
+        </details>
+    </section>
+
+    <section class="location">
+        <h2>Ubicación</h2>
+        <div class="location-row"><span>📍</span> Dirección completa aquí</div>
+        <div class="location-row"><span>📞</span> Teléfono aquí</div>
+        <div class="location-row"><span>🕰️</span> Horario de negocio aquí</div>
+    </section>
+</div>
+
+<footer>
+    <div>
+        <div>
+            <h3>Thundermans</h3>
+            <p>Tu tienda de cómics favorita.</p>
+        </div>
+        <div>
+            <h3>Información</h3>
+            <p><a href="#features">Características</a></p>
+            <p><a href="#services">Servicios</a></p>
+            <p><a href="#contact">Contacto</a></p>
+        </div>
+        <div>
+            <h3>Contacto</h3>
+            <p>Email: contacto@thundermans.com</p>
+            <p>Teléfono: 123-456-7890</p>
+        </div>
+        <div>
+            <h3>Redes Sociales</h3>
+            <p>Facebook: <a href="https://facebook.com/thundermans">Thundermans</a></p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+
+  <!-- Chatwoot -->
+  <script>
+    (function(d,t) {
+      var BASE_URL="https://app.chatwoot.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK && window.chatwootSDK.run({
+          websiteToken: "vdTKwXXuTyNw7QujBGyQ7K8n",
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+</body>
+</html>
