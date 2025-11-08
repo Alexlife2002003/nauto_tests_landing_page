@@ -1,5 +1,5 @@
-function logCTAClick() {
-            console.log('CTA Clicked');
+function logCTA() {
+            console.log('Primary CTA clicked');
         }
         document.addEventListener('DOMContentLoaded', function() {
             const anchors = document.querySelectorAll('a[href^="#"]');
