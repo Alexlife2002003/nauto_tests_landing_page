@@ -2,113 +2,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merkuria Mazapanes</title>
-    <meta name="description" content="Descubre los deliciosos mazapanes de Merkuria, hechos con amor y tradición.">
+    <meta name="description" content="Descubre los deliciosos mazapanes de Merkuria. Sabores únicos y una historia artesanal.">
     <link rel="canonical" href="https://www.merkuriamazapanes.com">
     <meta property="og:title" content="Merkuria Mazapanes">
-    <meta property="og:description" content="Deliciosos mazapanes artesanales.">
-    <meta property="og:url" content="https://www.merkuriamazapanes.com">
+    <meta property="og:description" content="Deliciosos mazapanes con sabores únicos.">
     <meta property="og:image" content="placeholder.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Merkuria Mazapanes">
-    <meta name="twitter:description" content="Deliciosos mazapanes artesanales.">
-    <meta name="twitter:image" content="placeholder.jpg">
+    <meta property="og:url" content="https://www.merkuriamazapanes.com">
+    <title>Merkuria Mazapanes</title>
     
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     
 
   <link rel="stylesheet" href="styles.css" /></head>
-<body class="bg-gray-50">
-    <header class="sticky top-0 z-10 bg-white shadow">
-        <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+<body class="bg-white text-gray-800">
+    <header class="sticky top-0 bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center p-4">
             <h1 class="text-xl font-bold">Merkuria Mazapanes</h1>
-            <a href="#contact" class="bg-brown-500 text-white px-4 py-2 rounded" onclick="logCTAClick()">Contáctanos</a>
+            <a href="#contact" class="bg-brown-500 text-white py-2 px-4 rounded" onclick="logCTA()">Contáctanos</a>
         </nav>
     </header>
     <main>
-        <section class="hero-bg py-20 text-center">
-            <div class="max-w-2xl mx-auto">
-                <h2 class="text-4xl font-bold mb-2">Descubre la Tradición de los Mazapanes</h2>
-                <p class="text-lg mb-6">Hechos con amor y los mejores ingredientes.</p>
-                <a href="#products" class="bg-brown-500 text-white px-6 py-3 rounded" onclick="logCTAClick()">Ver Sabores</a>
+        <section class="hero text-center py-20">
+            <h2 class="text-4xl font-bold">Deliciosos Mazapanes</h2>
+            <p class="mt-4 text-lg">Una historia artesanal con sabores únicos.</p>
+            <div class="mt-8">
+                <a href="#products" class="bg-brown-500 text-white py-2 px-4 rounded" onclick="logCTA()">Ver Sabores</a>
+                <a href="#ingredients" class="bg-gray-300 text-gray-800 py-2 px-4 rounded ml-4">Ingredientes</a>
             </div>
         </section>
-        <section id="products" class="py-10">
-            <h3 class="text-2xl font-bold text-center mb-6">Nuestros Sabores</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-                <div class="card bg-white rounded-lg shadow p-4">
+        <section id="products" class="container mx-auto py-12">
+            <h3 class="text-2xl font-bold text-center">Nuestros Sabores</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div class="rounded-card bg-white p-4">
                     <h4 class="font-semibold">Clásico</h4>
-                    <p>Delicioso mazapán tradicional.</p>
+                    <ul class="mt-2">
+                        <li>Suave y dulce</li>
+                        <li>Hecho a mano</li>
+                    </ul>
+                    <a href="#" class="text-brown-500">Más info</a>
                 </div>
-                <div class="card bg-white rounded-lg shadow p-4">
+                <div class="rounded-card bg-white p-4">
                     <h4 class="font-semibold">Chocolate</h4>
-                    <p>Una mezcla perfecta de chocolate y mazapán.</p>
+                    <ul class="mt-2">
+                        <li>Rico y cremoso</li>
+                        <li>Un placer irresistible</li>
+                    </ul>
+                    <a href="#" class="text-brown-500">Más info</a>
                 </div>
-                <div class="card bg-white rounded-lg shadow p-4">
+                <div class="rounded-card bg-white p-4">
                     <h4 class="font-semibold">Cajeta</h4>
-                    <p>Un toque dulce de cajeta.</p>
+                    <ul class="mt-2">
+                        <li>Dulce de leche</li>
+                        <li>Un sabor tradicional</li>
+                    </ul>
+                    <a href="#" class="text-brown-500">Más info</a>
                 </div>
-                <div class="card bg-white rounded-lg shadow p-4">
+                <div class="rounded-card bg-white p-4">
                     <h4 class="font-semibold">Pistache</h4>
-                    <p>Un sabor único y delicioso.</p>
+                    <ul class="mt-2">
+                        <li>Textura crujiente</li>
+                        <li>Un toque gourmet</li>
+                    </ul>
+                    <a href="#" class="text-brown-500">Más info</a>
                 </div>
             </div>
         </section>
-        <section class="py-10 bg-gray-100">
-            <h3 class="text-2xl font-bold text-center mb-6">Beneficios de Nuestros Mazapanes</h3>
-            <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="flex items-start bg-white rounded-lg shadow p-4">
-                    <div class="mr-4">🍬</div>
-                    <div>
-                        <h4 class="font-semibold">Ingredientes Naturales</h4>
-                        <p>Solo utilizamos los mejores ingredientes.</p>
-                    </div>
-                </div>
-                <div class="flex items-start bg-white rounded-lg shadow p-4">
-                    <div class="mr-4">❤️</div>
-                    <div>
-                        <h4 class="font-semibold">Hecho a Mano</h4>
-                        <p>Cada mazapán es elaborado con amor.</p>
-                    </div>
-                </div>
-                <div class="flex items-start bg-white rounded-lg shadow p-4">
-                    <div class="mr-4">🌱</div>
-                    <div>
-                        <h4 class="font-semibold">Sin Conservantes</h4>
-                        <p>Disfruta de un producto fresco y saludable.</p>
-                    </div>
-                </div>
+        <section id="ingredients" class="container mx-auto py-12">
+            <h3 class="text-2xl font-bold text-center">Ingredientes</h3>
+            <p class="mt-4 text-center">Utilizamos ingredientes de la más alta calidad para ofrecerte un producto excepcional.</p>
+        </section>
+        <section id="testimonials" class="container mx-auto py-12">
+            <h3 class="text-2xl font-bold text-center">Testimonios</h3>
+            <div class="mt-6">
+                <blockquote class="rounded-card bg-gray-100 p-4">
+                    <p>"Los mejores mazapanes que he probado!" - Cliente Satisfecho</p>
+                </blockquote>
             </div>
         </section>
-        <section class="py-10">
-            <h3 class="text-2xl font-bold text-center mb-6">Testimonios</h3>
-            <div class="max-w-7xl mx-auto">
-                <p class="text-center">"Los mejores mazapanes que he probado!" - Cliente Satisfecho</p>
-            </div>
-        </section>
-        <section id="contact" class="py-10 bg-gray-100">
-            <h3 class="text-2xl font-bold text-center mb-6">Contáctanos</h3>
-            <form class="max-w-md mx-auto">
-                <label class="block mb-2" for="name">Nombre</label>
-                <input class="w-full p-2 border rounded mb-4" type="text" id="name" required>
-                <label class="block mb-2" for="email">Correo Electrónico</label>
-                <input class="w-full p-2 border rounded mb-4" type="email" id="email" required>
-                <label class="block mb-2" for="phone">Teléfono</label>
-                <input class="w-full p-2 border rounded mb-4" type="tel" id="phone" required>
-                <button type="submit" class="bg-brown-500 text-white px-4 py-2 rounded" onclick="logCTAClick()">Enviar</button>
+        <section id="contact" class="container mx-auto py-12">
+            <h3 class="text-2xl font-bold text-center">Contáctanos</h3>
+            <form class="mt-6">
+                <label class="block mb-2" for="name">Nombre:</label>
+                <input class="w-full border rounded p-2 mb-4" type="text" id="name" name="name" aria-label="Nombre" required>
+                
+                <label class="block mb-2" for="email">Correo Electrónico:</label>
+                <input class="w-full border rounded p-2 mb-4" type="email" id="email" name="email" aria-label="Correo Electrónico" required>
+                
+                <label class="block mb-2" for="phone">Teléfono:</label>
+                <input class="w-full border rounded p-2 mb-4" type="tel" id="phone" name="phone" aria-label="Teléfono">
+                
+                <button type="submit" class="bg-brown-500 text-white py-2 px-4 rounded w-full">Enviar</button>
             </form>
         </section>
-        <section class="py-10">
-            <h3 class="text-2xl font-bold text-center mb-6">Ubicación</h3>
-            <div class="max-w-md mx-auto">
-                <p>📍 Calle Falsa 123, Ciudad, País</p>
-                <p>📞 (123) 456-7890</p>
-                <p>🕰️ Lunes a Viernes: 9am - 5pm</p>
-            </div>
+        <section id="location" class="container mx-auto py-12">
+            <h3 class="text-2xl font-bold text-center">Ubicación</h3>
+            <p class="mt-2 text-center">📍 Calle Ficticia 123, Ciudad, País</p>
+            <p class="mt-2 text-center">📞 (123) 456-7890</p>
+            <p class="mt-2 text-center">🕰️ Lunes a Viernes: 9am - 5pm</p>
+        </section>
+        <section class="py-12">
+            <h3 class="text-2xl font-bold text-center">Preguntas Frecuentes</h3>
+            <details class="mt-4">
+                <summary class="cursor-pointer">¿Cómo se hacen los mazapanes?</summary>
+                <p class="mt-2">Nuestros mazapanes son hechos a mano con ingredientes de alta calidad.</p>
+            </details>
         </section>
     </main>
-    <footer class="bg-gray-800 text-white py-10">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
             <div>
                 <h4 class="font-bold">Merkuria Mazapanes</h4>
                 <p>Deliciosos mazapanes artesanales.</p>
@@ -116,23 +117,19 @@
             <div>
                 <h4 class="font-bold">Información</h4>
                 <ul>
-                    <li><a href="#" class="text-gray-400">Sobre Nosotros</a></li>
-                    <li><a href="#" class="text-gray-400">Política de Privacidad</a></li>
+                    <li><a href="#products" class="text-gray-400">Productos</a></li>
+                    <li><a href="#contact" class="text-gray-400">Contacto</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-bold">Contacto</h4>
-                <ul>
-                    <li><a href="#contact" class="text-gray-400">Contáctanos</a></li>
-                </ul>
+                <p>Email: contacto@merkuria.com</p>
             </div>
             <div>
                 <h4 class="font-bold">Redes Sociales</h4>
-                <ul class="flex space-x-4">
-                    <li><a href="#" class="text-gray-400">📘</a></li>
-                    <li><a href="#" class="text-gray-400">🐦</a></li>
-                    <li><a href="#" class="text-gray-400">📸</a></li>
-                </ul>
+                <a href="#" class="text-gray-400">Facebook</a><br>
+                <a href="#" class="text-gray-400">Twitter</a><br>
+                <a href="#" class="text-gray-400">Instagram</a>
             </div>
         </div>
     </footer>
