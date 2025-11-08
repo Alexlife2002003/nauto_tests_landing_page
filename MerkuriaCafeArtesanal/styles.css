@@ -1,0 +1,12 @@
+body {
+            font-family: system-ui, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(to bottom right, #f5f3e5, #d9c9a9);
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
