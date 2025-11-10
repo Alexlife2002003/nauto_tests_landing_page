@@ -1,4 +1,4 @@
-document.querySelector('form').addEventListener('submit', function(e) {
+document.querySelector('form').addEventListener('submit', function (e) {
             e.preventDefault();
             console.log('Formulario enviado');
         });
