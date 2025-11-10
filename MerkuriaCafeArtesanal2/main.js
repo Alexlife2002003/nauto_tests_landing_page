@@ -1,15 +1,12 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+function logCTA() {
+            console.log('CTA clicked');
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctas = document.querySelectorAll('.cta');
+            ctas.forEach(cta => {
+                cta.addEventListener('click', logCTA);
             });
         });
-    });
-
-    document.querySelector('.bg-yellow-500').addEventListener('click', function() {
-        console.log('Primary CTA clicked');
-    });
 
 (function(d,t){
       var BASE_URL="https://app.chatwoot.com";
