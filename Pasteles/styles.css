@@ -1,0 +1,6 @@
+body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(to bottom right, #f8f4e3, #eae1d5);
+        }
