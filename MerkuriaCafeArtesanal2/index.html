@@ -1,0 +1,142 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merkuria Café Artesanal - Café de especialidad y experiencias sensoriales.">
+    <link rel="canonical" href="https://www.merkuriacafe.com">
+    <title>Merkuria Cafe Artesanal</title>
+    <meta property="og:title" content="Merkuria Café Artesanal">
+    <meta property="og:description" content="Café de especialidad y experiencias sensoriales.">
+    <meta property="og:image" content="placeholder-image.jpg">
+    <meta property="og:url" content="https://www.merkuriacafe.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Merkuria Café Artesanal">
+    <meta name="twitter:description" content="Café de especialidad y experiencias sensoriales.">
+    <meta name="twitter:image" content="placeholder-image.jpg">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+
+  <link rel="stylesheet" href="styles.css" /></head>
+<body class="bg-gray-100">
+    <header class="sticky top-0 bg-white shadow">
+        <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Merkuria Café</h1>
+            <a href="#contact" class="bg-yellow-500 text-white px-4 py-2 rounded" onclick="logCTA()">Ordenar en Línea</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero h-screen flex items-center justify-center text-center p-4">
+            <div>
+                <h2 class="text-5xl font-bold mb-2">Descubre el Sabor del Café</h2>
+                <p class="text-lg mb-4">Nuestra historia y filosofía se centran en ofrecer experiencias sensoriales únicas.</p>
+                <a href="#products" class="bg-yellow-500 text-white px-4 py-2 rounded" onclick="logCTA()">Visita la Tienda</a>
+            </div>
+        </section>
+        <section id="products" class="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="card bg-white rounded-lg shadow p-4">
+                <h3 class="font-bold">Espresso</h3>
+                <ul class="list-disc pl-5">
+                    <li>Rico y concentrado</li>
+                    <li>Perfecto para café con leche</li>
+                </ul>
+                <a href="#" class="text-yellow-500">Más Información</a>
+            </div>
+            <div class="card bg-white rounded-lg shadow p-4">
+                <h3 class="font-bold">Pour-Over</h3>
+                <ul class="list-disc pl-5">
+                    <li>Sabores complejos</li>
+                    <li>Control total sobre la infusión</li>
+                </ul>
+                <a href="#" class="text-yellow-500">Más Información</a>
+            </div>
+            <div class="card bg-white rounded-lg shadow p-4">
+                <h3 class="font-bold">Prensa Francesa</h3>
+                <ul class="list-disc pl-5">
+                    <li>Textura rica y sedosa</li>
+                    <li>Ideal para compartir</li>
+                </ul>
+                <a href="#" class="text-yellow-500">Más Información</a>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto p-6">
+            <h2 class="text-3xl font-bold mb-4">Métodos de Preparación</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex items-center bg-white rounded-lg shadow p-4">
+                    <span class="text-4xl mr-4">☕</span>
+                    <p>Explora diferentes métodos para disfrutar de tu café.</p>
+                </div>
+                <div class="flex items-center bg-white rounded-lg shadow p-4">
+                    <span class="text-4xl mr-4">🌀</span>
+                    <p>Aprende sobre las técnicas de infusión.</p>
+                </div>
+                <div class="flex items-center bg-white rounded-lg shadow p-4">
+                    <span class="text-4xl mr-4">🌊</span>
+                    <p>Descubre la magia del cold brew.</p>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto p-6">
+            <h2 class="text-3xl font-bold mb-4">Testimonios de Clientes</h2>
+            <div class="flex overflow-x-auto">
+                <div class="bg-white rounded-lg shadow p-4 m-2">"El mejor café que he probado!"</div>
+                <div class="bg-white rounded-lg shadow p-4 m-2">"Una experiencia sensorial única."</div>
+                <div class="bg-white rounded-lg shadow p-4 m-2">"Volveré sin duda."</div>
+            </div>
+        </section>
+        <section id="contact" class="max-w-7xl mx-auto p-6">
+            <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
+            <form class="bg-white rounded-lg shadow p-4">
+                <label for="name" class="block mb-2">Nombre:</label>
+                <input type="text" id="name" name="name" class="w-full p-2 mb-4 border rounded" required>
+                <label for="email" class="block mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="w-full p-2 mb-4 border rounded" required>
+                <label for="message" class="block mb-2">Mensaje:</label>
+                <textarea id="message" name="message" class="w-full p-2 mb-4 border rounded" required></textarea>
+                <button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded">Enviar</button>
+            </form>
+        </section>
+        <section class="max-w-7xl mx-auto p-6">
+            <h2 class="text-3xl font-bold mb-4">Ubicación</h2>
+            <div class="mb-2">📍 Calle Ejemplo 123, Ciudad, País</div>
+            <div class="mb-2">📞 (123) 456-7890</div>
+            <div>🕰️ Lunes a Viernes: 8am - 6pm</div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white p-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div>
+                <h3 class="font-bold">Merkuria Café</h3>
+                <p>Donde el café se convierte en arte.</p>
+            </div>
+            <div>
+                <h3 class="font-bold">Información</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Sobre Nosotros</a></li>
+                    <li><a href="#" class="hover:underline">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Contacto</h3>
+                <ul>
+                    <li><a href="mailto:info@merkuriacafe.com" class="hover:underline">Email</a></li>
+                    <li><a href="tel:+1234567890" class="hover:underline">Teléfono</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Síguenos</h3>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Facebook</a></li>
+                    <li><a href="#" class="hover:underline">Instagram</a></li>
+                    <li><a href="#" class="hover:underline">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Chatwoot -->
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
