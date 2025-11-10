@@ -1,10 +1,6 @@
-function logCTA() {
-            console.log('Primary CTA clicked');
+function trackCTAClick() {
+            console.log('CTA Clicked');
         }
-        document.addEventListener('DOMContentLoaded', function() {
-            const cta = document.getElementById('primary-cta');
-            cta.addEventListener('click', logCTA);
-        });
 
 (function(d,t){
       var BASE_URL="https://app.chatwoot.com";
