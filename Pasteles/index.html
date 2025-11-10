@@ -1,0 +1,136 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merkuria Pasteles - Pasteles artesanales con ingredientes naturales y tradición.">
+    <link rel="canonical" href="https://example.com/pasteles">
+    <title>Pasteles</title>
+    <meta property="og:title" content="Merkuria Pasteles">
+    <meta property="og:description" content="Pasteles artesanales con ingredientes naturales y tradición.">
+    <meta property="og:image" content="placeholder.jpg">
+    <meta property="og:url" content="https://example.com/pasteles">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Merkuria Pasteles">
+    <meta name="twitter:description" content="Pasteles artesanales con ingredientes naturales y tradición.">
+    <meta name="twitter:image" content="placeholder.jpg">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+
+  <link rel="stylesheet" href="styles.css" /></head>
+<body class="bg-white">
+    <header class="sticky top-0 z-10 bg-white shadow">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">Merkuria Pasteles</h1>
+            <a href="#contact" class="bg-brown-500 text-white px-4 py-2 rounded hover:bg-brown-600 transition">Contáctanos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-bg h-screen flex items-center justify-center text-center">
+            <div>
+                <h2 class="text-5xl font-bold mb-2">Pasteles Artesanales</h2>
+                <p class="mb-4">Tradición y calidad en cada bocado.</p>
+                <a id="primary-cta" href="#flavors" class="bg-brown-500 text-white px-6 py-3 rounded hover:bg-brown-600 transition">Ver Sabores</a>
+            </div>
+        </section>
+        <section id="flavors" class="py-12">
+            <h3 class="text-3xl font-semibold text-center mb-6">Nuestros Sabores</h3>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="font-bold">Vainilla</h4>
+                    <p>Suave y dulce.</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="font-bold">Chocolate</h4>
+                    <p>Rico y decadente.</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="font-bold">Cajeta</h4>
+                    <p>Tradición mexicana.</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="font-bold">Pistache</h4>
+                    <p>Un toque especial.</p>
+                </div>
+            </div>
+        </section>
+        <section class="py-12">
+            <h3 class="text-3xl font-semibold text-center mb-6">Ingredientes Naturales</h3>
+            <p class="max-w-2xl mx-auto text-center">Utilizamos solo los mejores ingredientes para garantizar la calidad de nuestros pasteles.</p>
+        </section>
+        <section class="py-12">
+            <h3 class="text-3xl font-semibold text-center mb-6">Testimonios</h3>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                <blockquote class="bg-gray-100 p-4 rounded-lg shadow">
+                    <p>"Los mejores pasteles que he probado!"</p>
+                    <cite>- Juan Pérez</cite>
+                </blockquote>
+                <blockquote class="bg-gray-100 p-4 rounded-lg shadow">
+                    <p>"Increíbles sabores y presentación."</p>
+                    <cite>- María López</cite>
+                </blockquote>
+            </div>
+        </section>
+        <section id="contact" class="py-12">
+            <h3 class="text-3xl font-semibold text-center mb-6">Contáctanos</h3>
+            <form class="max-w-md mx-auto">
+                <label class="block mb-2" for="name">Nombre:</label>
+                <input class="border rounded w-full p-2 mb-4" type="text" id="name" required>
+                <label class="block mb-2" for="email">Correo Electrónico:</label>
+                <input class="border rounded w-full p-2 mb-4" type="email" id="email" required>
+                <label class="block mb-2" for="message">Mensaje:</label>
+                <textarea class="border rounded w-full p-2 mb-4" id="message" rows="4" required></textarea>
+                <button type="submit" class="bg-brown-500 text-white px-4 py-2 rounded hover:bg-brown-600 transition w-full">Enviar</button>
+            </form>
+        </section>
+        <section class="py-12">
+            <h3 class="text-3xl font-semibold text-center mb-6">Ubicación</h3>
+            <div class="max-w-md mx-auto text-center">
+                <p>📍 Calle Falsa 123, Ciudad</p>
+                <p>📞 (123) 456-7890</p>
+                <p>🕰️ Lunes a Viernes: 9am - 5pm</p>
+            </div>
+        </section>
+        <section class="py-12">
+            <h3 class="text-3xl font-semibold text-center mb-6">Preguntas Frecuentes</h3>
+            <details class="mb-4">
+                <summary class="cursor-pointer">¿Hacen envíos?</summary>
+                <p class="pl-4">Sí, hacemos envíos a toda la ciudad.</p>
+            </details>
+            <details class="mb-4">
+                <summary class="cursor-pointer">¿Puedo personalizar mi pastel?</summary>
+                <p class="pl-4">Claro, ofrecemos opciones de personalización.</p>
+            </details>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div>
+                <h4 class="font-bold">Merkuria Pasteles</h4>
+                <p>Tradición y sabor en cada bocado.</p>
+            </div>
+            <div>
+                <h4 class="font-bold">Información</h4>
+                <ul>
+                    <li><a href="#flavors" class="hover:underline">Sabores</a></li>
+                    <li><a href="#contact" class="hover:underline">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold">Contacto</h4>
+                <p>📧 info@merkuria.com</p>
+            </div>
+            <div>
+                <h4 class="font-bold">Redes Sociales</h4>
+                <a href="#" class="hover:underline">Facebook</a><br>
+                <a href="#" class="hover:underline">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Chatwoot -->
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
