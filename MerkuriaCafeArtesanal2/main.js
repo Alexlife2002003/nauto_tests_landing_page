@@ -1,6 +1,15 @@
-function logCTA() {
-            console.log('Primary CTA clicked');
-        }
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    document.querySelector('.bg-yellow-500').addEventListener('click', function() {
+        console.log('Primary CTA clicked');
+    });
 
 (function(d,t){
       var BASE_URL="https://app.chatwoot.com";
