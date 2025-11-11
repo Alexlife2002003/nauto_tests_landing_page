@@ -1,13 +1,14 @@
 document.getElementById('menu-toggle').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
+            const menu = document.getElementById('menu');
             menu.classList.toggle('hidden');
         });
 
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const message = document.getElementById('form-message');
-            message.textContent = '¡Gracias por tu mensaje!';
-            message.classList.add('text-green-500');
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const messageDiv = document.getElementById('form-message');
+            messageDiv.textContent = "¡Mensaje enviado con éxito!";
+            messageDiv.classList.remove('hidden');
+            this.reset();
         });
 
 (function(d,t){
