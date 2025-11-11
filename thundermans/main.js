@@ -1,22 +1,13 @@
 document.getElementById('menu-toggle').addEventListener('click', function() {
-            const menu = document.getElementById('menu');
+            const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
+
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            document.getElementById('form-message').classList.remove('hidden');
-        });
-        function toggleAccordion(button) {
-            const content = button.nextElementSibling;
-            content.classList.toggle('hidden');
-        }
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+            const message = document.getElementById('form-message');
+            message.textContent = '¡Gracias por tu mensaje!';
+            message.classList.add('text-green-500');
         });
 
 (function(d,t){
