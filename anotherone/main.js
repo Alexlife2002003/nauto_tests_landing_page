@@ -1,8 +1,3 @@
-document.querySelector('form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        console.log('Formulario enviado');
-    });
-
 (function(d,t){
       var BASE_URL="https://app.chatwoot.com";
       var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
