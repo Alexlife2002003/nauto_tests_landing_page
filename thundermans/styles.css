@@ -1,20 +1,17 @@
 :root {
-            --color-primary: #ff4757;
-            --color-secondary: #1e90ff;
-            --bg-soft: #f7f9fc;
-            --radius-xl: 1rem;
-            --shadow-soft: 0 4px 10px rgba(0, 0, 0, 0.1);
+            --color-primary: #ff6347; /* Tomato */
+            --color-secondary: #1e1e1e; /* Dark Gray */
+            --bg-soft: #f9f9f9; /* Light Gray */
+            --radius-xl: 1rem; /* Border Radius */
+            --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft Shadow */
         }
         body {
             font-family: 'Arial', sans-serif;
         }
         .hero {
-            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            background: linear-gradient(135deg, var(--color-primary), #ff7f50);
         }
         .card {
             border-radius: var(--radius-xl);
             box-shadow: var(--shadow-soft);
-        }
-        .accordion {
-            background: var(--bg-soft);
         }
