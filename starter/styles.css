@@ -1,0 +1,13 @@
+body {
+            background-color: #F9FAFB;
+        }
+        .hero {
+            background-color: #4F46E5;
+            color: white;
+        }
+        .card {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .rounded-img {
+            border-radius: 15px;
+        }
