@@ -1,0 +1,115 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merkuria Café - Descubre la esencia del café con sabores únicos y una experiencia artesanal.">
+    <meta name="keywords" content="café, Merkuria, sabores, artesanal, contacto">
+    <meta name="author" content="Merkuria Café">
+    <title>Merkuria Café</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+
+  <link rel="stylesheet" href="styles.css" /></head>
+<body class="bg-gray-100">
+
+<header>
+    <nav class="sticky top-0 z-50 bg-white p-4 flex justify-between items-center sticky-nav">
+        <div class="text-xl font-bold">Merkuria Café</div>
+        <ul class="flex space-x-4">
+            <li><a href="#hero" class="text-gray-700 hover:text-gray-900">Inicio</a></li>
+            <li><a href="#sabores" class="text-gray-700 hover:text-gray-900">Sabores</a></li>
+            <li><a href="#testimonios" class="text-gray-700 hover:text-gray-900">Testimonios</a></li>
+            <li><a href="#contacto" class="text-gray-700 hover:text-gray-900">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="hero" class="hero h-screen flex items-center justify-center text-center">
+        <div>
+            <h1 class="text-5xl font-bold mb-4">Descubre el Sabor del Café</h1>
+            <p class="text-xl mb-6">Una experiencia artesanal que despierta tus sentidos.</p>
+            <a href="#contacto" class="bg-brown-500 text-white px-6 py-3 rounded-lg">¡Prueba Ahora!</a>
+        </div>
+    </section>
+
+    <section id="sabores" class="p-8">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Nuestros Sabores</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+                <h3 class="font-bold">Clásico</h3>
+                <p>Un sabor puro y auténtico.</p>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+                <h3 class="font-bold">Chocolate</h3>
+                <p>Deliciosa mezcla de café y chocolate.</p>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+                <h3 class="font-bold">Cajeta</h3>
+                <p>Un toque dulce que te encantará.</p>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+                <h3 class="font-bold">Pistache</h3>
+                <p>Un sabor único y sorprendente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="p-8 bg-gray-200">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Testimonios</h2>
+        <div class="flex flex-col space-y-4">
+            <blockquote class="bg-white p-4 rounded-lg shadow">
+                <p>"El mejor café que he probado, simplemente delicioso!" - Juan P.</p>
+            </blockquote>
+            <blockquote class="bg-white p-4 rounded-lg shadow">
+                <p>"Me encanta la variedad de sabores, siempre vuelvo por más." - Ana G.</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="contacto" class="p-8">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Contacto</h2>
+        <form id="contact-form" class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+            <label for="nombre" class="block mb-2">Nombre</label>
+            <input type="text" id="nombre" class="border p-2 w-full mb-4" required>
+            <label for="email" class="block mb-2">Email</label>
+            <input type="email" id="email" class="border p-2 w-full mb-4" required>
+            <label for="mensaje" class="block mb-2">Mensaje</label>
+            <textarea id="mensaje" class="border p-2 w-full mb-4" required></textarea>
+            <button type="submit" class="bg-brown-500 text-white px-6 py-3 rounded-lg">Enviar</button>
+        </form>
+    </section>
+
+    <section class="p-8">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Ubicación y Horarios</h2>
+        <p class="text-center">Calle del Café 123, Ciudad, País</p>
+        <p class="text-center">Lunes a Viernes: 8 AM - 6 PM</p>
+        <p class="text-center">Sábado: 9 AM - 5 PM</p>
+        <div class="text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509177!2d144.95373631531603!3d-37.81627997975101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f5c3e5b%3A0x5045675218ceedc0!2sMerkuria%20Caf%C3%A9!5e0!3m2!1ses-419!2sar!4v1633037629089!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+</main>
+
+<footer class="footer p-8">
+    <div class="flex justify-between">
+        <div>
+            <h3 class="font-bold">Síguenos</h3>
+            <div class="social-icons flex space-x-4">
+                <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.35C0 23.4.6 24 1.325 24h21.35C23.4 24 24 23.4 24 22.675v-21.35C24 .6 23.4 0 22.675 0zm-3.35 12.5h-4.2v11.5h-5.5V12.5h-2.5V9h2.5V7.5c0-3.7 2.2-5.5 5.5-5.5 1.6 0 3.3.3 3.3.3v3.7h-1.9c-1.8 0-2.4.9-2.4 2.3v2.5h4.5l-.5 3.5z"/></svg></a>
+                <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M24 4.56a9.83 9.83 0 01-2.828.775A4.935 4.935 0 0023.338 3a9.87 9.87 0 01-3.127 1.2A4.925 4.925 0 0016.616 0c-2.708 0-4.917 2.209-4.917 4.917 0 .385.043.76.127 1.124A13.975 13.975 0 011.671 3.149a4.917 4.917 0 001.523 6.573A4.905 4.905 0 01.96 9.2v.062a4.927 4.927 0 003.946 4.83 4.933 4.933 0 01-2.224.085 4.93 4.93 0 004.604 3.417A9.866 9.866 0 010 19.54a13.94 13.94 0 007.548 2.211c9.056 0 14.008-7.493 14.008-13.986 0-.213 0-.426-.015-.637A10.025 10.025 0 0024 4.56z"/></svg></a>
+                <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6 18.5c0 .827-.673 1.5-1.5 1.5h-9c-.827 0-1.5-.673-1.5-1.5v-9c0-.827.673-1.5 1.5-1.5h9c.827 0 1.5.673 1.5 1.5v9zm-3-6.5c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm1-4.5c-.828 0-1.5-.672-1.5-1.5S15.172 9 16 9s1.5.672 1.5 1.5S16.828 12 16 12z"/></svg></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+  <!-- Chatwoot -->
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
