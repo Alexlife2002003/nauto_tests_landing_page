@@ -1,7 +1,26 @@
-body { font-family: 'Arial', sans-serif; }
-        .hero-bg { background: linear-gradient(to bottom right, #f8e2d4, #d9c6b7); }
-        .card { transition: transform 0.3s; }
-        .card:hover { transform: scale(1.05); }
-        .sticky-nav { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
-        .footer-bg { background-color: #4b3c31; }
-        .social-icon { width: 24px; height: 24px; }
+:root {
+            --color-cafe: #d6c5b3;
+            --color-neutro: #f8f8f8;
+            --color-acento: #8b5a2b;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        nav {
+            background-color: var(--color-cafe);
+        }
+        .hero {
+            background: linear-gradient(to right, var(--color-cafe), var(--color-neutro));
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: var(--color-acento);
+            color: white;
+        }
