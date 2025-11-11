@@ -1,81 +1,91 @@
-```html
-<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre los deliciosos mazapanes de Merkuria, elaborados con ingredientes de la más alta calidad.">
-    <meta name="keywords" content="mazapanes, Merkuria, dulces, postres, chocolate, cajeta, pistache">
+    <meta name="description" content="Descubre los deliciosos mazapanes de Merkuria, hechos con amor y tradición.">
+    <meta name="keywords" content="mazapanes, Merkuria, dulces, postres, sabor">
     <meta name="author" content="Merkuria Mazapanes">
     <title>Merkuria Mazapanes</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     
 
   <link rel="stylesheet" href="styles.css" /></head>
-<body>
+
+<body class="bg-gray-100 text-gray-800">
     <header>
-        <nav class="sticky top-0 z-10 p-4 flex justify-between items-center">
-            <div class="text-xl font-bold">Merkuria Mazapanes</div>
+        <nav class="sticky top-0 bg-white p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Merkuria Mazapanes</h1>
             <ul class="flex space-x-4">
-                <li><a href="#hero" class="hover:text-brown-600">Inicio</a></li>
-                <li><a href="#productos" class="hover:text-brown-600">Productos</a></li>
-                <li><a href="#contacto" class="hover:text-brown-600">Contacto</a></li>
-                <li><a href="#ubicacion" class="hover:text-brown-600">Ubicación</a></li>
+                <li><a href="#hero" class="hover:text-gray-600">Inicio</a></li>
+                <li><a href="#productos" class="hover:text-gray-600">Productos</a></li>
+                <li><a href="#contacto" class="hover:text-gray-600">Contacto</a></li>
+                <li><a href="#ubicacion" class="hover:text-gray-600">Ubicación</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <h1 class="text-4xl font-bold mb-2">Deliciosos Mazapanes Artesanales</h1>
-            <p class="mb-4">Descubre la historia y tradición detrás de nuestros mazapanes.</p>
-            <button class="bg-brown-500 text-white px-4 py-2 rounded">Ver Productos</button>
-            <img src="placeholder.jpg" alt="Mazapanes de Merkuria" class="mt-4 w-1/2 mx-auto">
+        <section id="hero" class="hero p-10 text-center">
+            <h2 class="text-4xl font-bold mb-2">Deliciosos Mazapanes</h2>
+            <p class="mb-4">Hechos con amor y tradición, descubre nuestros sabores únicos.</p>
+            <button onclick="trackClick()" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Ver Productos</button>
+            <img src="placeholder.jpg" alt="Mazapanes" class="mt-4 mx-auto w-1/2 rounded-lg">
         </section>
 
-        <section id="productos" class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="card p-4">
-                <h2 class="font-bold">Clásico</h2>
-                <p>Delicioso mazapán tradicional.</p>
-            </div>
-            <div class="card p-4">
-                <h2 class="font-bold">Chocolate</h2>
-                <p>Un toque de chocolate irresistible.</p>
-            </div>
-            <div class="card p-4">
-                <h2 class="font-bold">Cajeta</h2>
-                <p>Con el sabor dulce de la cajeta.</p>
-            </div>
-            <div class="card p-4">
-                <h2 class="font-bold">Pistache</h2>
-                <p>Un sabor único y delicioso.</p>
-            </div>
+        <section id="productos" class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article class="card bg-white p-5 shadow-md">
+                <h3 class="font-semibold">Clásico</h3>
+                <p>El sabor tradicional que nunca pasa de moda.</p>
+            </article>
+            <article class="card bg-white p-5 shadow-md">
+                <h3 class="font-semibold">Chocolate</h3>
+                <p>Una deliciosa combinación de chocolate y mazapán.</p>
+            </article>
+            <article class="card bg-white p-5 shadow-md">
+                <h3 class="font-semibold">Cajeta</h3>
+                <p>Un toque dulce con el sabor de la cajeta.</p>
+            </article>
+            <article class="card bg-white p-5 shadow-md">
+                <h3 class="font-semibold">Pistache</h3>
+                <p>Un sabor único que te sorprenderá.</p>
+            </article>
         </section>
 
-        <section id="contacto" class="p-6">
-            <h2 class="text-2xl font-bold mb-4">Contáctanos</h2>
-            <form id="contactForm" class="space-y-4">
-                <input type="text" placeholder="Nombre" required class="border p-2 w-full rounded">
-                <input type="email" placeholder="Email" required class="border p-2 w-full rounded">
-                <textarea placeholder="Mensaje" required class="border p-2 w-full rounded"></textarea>
-                <button type="submit" class="bg-brown-500 text-white px-4 py-2 rounded">Enviar</button>
+        <section id="contacto" class="p-10">
+            <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
+            <form onsubmit="return validateForm()" class="flex flex-col space-y-4">
+                <input type="text" id="nombre" placeholder="Nombre" required class="border p-2 rounded">
+                <input type="email" id="email" placeholder="Email" required class="border p-2 rounded">
+                <textarea id="mensaje" placeholder="Mensaje" required class="border p-2 rounded"></textarea>
+                <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Enviar</button>
             </form>
         </section>
 
-        <section id="ubicacion" class="p-6">
-            <h2 class="text-2xl font-bold mb-4">Ubicación y Horarios</h2>
-            <p>Estamos ubicados en el corazón de la ciudad.</p>
-            <p>Horario: Lunes a Sábado, 9 AM - 6 PM</p>
-            <div id="map" class="mt-4 h-64 bg-gray-300">Mapa Placeholder</div>
+        <section id="ubicacion" class="p-10">
+            <h2 class="text-3xl font-bold mb-4">Ubicación y Horarios</h2>
+            <p>Visítanos en nuestra tienda ubicada en el centro de la ciudad.</p>
+            <p>Horarios: Lunes a Sábado, 9:00 AM - 6:00 PM</p>
+            <div class="mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509575!2d144.9537353153167!3d-37.81720997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0c6f07%3A0x5045675218ceed30!2sYour%20Location!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
     </main>
 
-    <footer class="footer text-center">
-        <div class="mb-4">Síguenos en nuestras redes sociales:</div>
-        <div>
-            <a href="#" class="text-white mx-2">Twitter</a>
-            <a href="#" class="text-white mx-2">Facebook</a>
-            <a href="#" class="text-white mx-2">Instagram</a>
+    <footer class="p-10 text-white">
+        <div class="flex justify-between">
+            <div>
+                <h3 class="font-bold">Síguenos</h3>
+                <a href="#" class="mr-4">Twitter</a>
+                <a href="#" class="mr-4">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div>
+                <h3 class="font-bold">Enlaces útiles</h3>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#ubicacion">Ubicación</a>
+            </div>
         </div>
     </footer>
 
@@ -86,5 +96,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>
-```
