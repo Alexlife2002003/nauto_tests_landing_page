@@ -1,10 +1,12 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                console.log('CTA Clicked:', this.textContent);
+function smoothScroll(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+            console.log(`CTA clicked: ${targetId}`);
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', smoothScroll);
             });
         });
 
