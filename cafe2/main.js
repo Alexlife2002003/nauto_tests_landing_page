@@ -1,12 +1,13 @@
-document.getElementById('menu-toggle').onclick = function () {
-            var menu = document.getElementById('mobile-menu');
+document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.querySelector('nav div.md\\:flex');
             menu.classList.toggle('hidden');
-        };
+        });
 
-        document.querySelector('form').onsubmit = function (e) {
-            e.preventDefault();
-            alert('Mensaje enviado con éxito.');
-        };
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('form-message').classList.remove('hidden');
+            this.reset();
+        });
 
 (function(d,t){
       var BASE_URL="https://app.chatwoot.com";
