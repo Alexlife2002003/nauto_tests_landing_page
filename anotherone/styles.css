@@ -1,0 +1,19 @@
+body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(to bottom right, #4B3C6A, #2C2A3A);
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .focus-visible {
+            outline: 2px solid #FF6F61;
+        }
