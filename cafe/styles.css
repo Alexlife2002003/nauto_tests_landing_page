@@ -1,7 +1,40 @@
-body { font-family: 'Arial', sans-serif; }
-        .hero { background: linear-gradient(to right, #f3e5ab, #d5c8a1); }
-        .card { transition: transform 0.3s; }
-        .card:hover { transform: scale(1.05); }
-        .sticky-nav { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
-        .footer { background-color: #333; color: white; }
-        .social-icons svg { width: 24px; height: 24px; }
+:root {
+            --color-primary: #4B3D3D;
+            --color-secondary: #D9CBA0;
+            --color-accent: #BFAF9D;
+            --color-bg: #F8F4E3;
+            --color-text: #3C3C3C;
+            --radius-xl: 1rem;
+            --shadow-soft: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+        }
+
+        .card {
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: var(--color-primary);
+            color: white;
+        }
