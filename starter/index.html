@@ -1,70 +1,118 @@
-<!DOCTYPE html>
-```html
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starter - Merlina</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="description" content="Descubre la intrigante serie de Netflix, Merlina. Conoce a los personajes y mantente al día con nosotros.">
+    <title>Merlina - Serie de Netflix</title>
+    <link rel="canonical" href="https://www.netflix.com/merlina">
+    <meta property="og:title" content="Merlina - Serie de Netflix">
+    <meta property="og:description" content="Descubre la intrigante serie de Netflix, Merlina.">
+    <meta property="og:image" content="placeholder.jpg">
+    <meta property="og:url" content="https://www.netflix.com/merlina">
+    <script src="https://cdn.tailwindcss.com"></script>
     
 
   <link rel="stylesheet" href="styles.css" /></head>
-<body>
-    <header class="hero py-20 text-center">
-        <h1 class="text-4xl font-bold">Bienvenido a Merlina</h1>
-        <img src="https://placehold.co/1200x600/4F46E5/FFFFFF?text=Merlina+Promo" alt="Promocional de Merlina" loading="lazy" class="rounded-img mt-5">
-        <p class="mt-5">Una serie intrigante que sigue las aventuras de Merlina Addams.</p>
-    </header>
+<body class="bg-gray-100">
 
-    <main class="container mx-auto my-10">
-        <section>
-            <h2 class="text-3xl font-semibold text-center mb-5">Personajes</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="card p-5 bg-white rounded-lg">
-                    <img src="https://placehold.co/400x300/6366F1/FFFFFF?text=Personaje+1" alt="Personaje 1" loading="lazy" class="rounded-img mb-3">
-                    <h3 class="text-xl">Merlina Addams</h3>
-                </div>
-                <div class="card p-5 bg-white rounded-lg">
-                    <img src="https://placehold.co/400x300/6366F1/FFFFFF?text=Personaje+2" alt="Personaje 2" loading="lazy" class="rounded-img mb-3">
-                    <h3 class="text-xl">Gómez Addams</h3>
-                </div>
-                <div class="card p-5 bg-white rounded-lg">
-                    <img src="https://placehold.co/400x300/6366F1/FFFFFF?text=Personaje+3" alt="Personaje 3" loading="lazy" class="rounded-img mb-3">
-                    <h3 class="text-xl">Morticia Addams</h3>
-                </div>
+<header class="sticky top-0 bg-white shadow">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold">Merlina</h1>
+        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded">Contáctanos</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero text-white py-20 flex flex-col items-center">
+        <h2 class="text-5xl font-extrabold">¡Bienvenido a Merlina!</h2>
+        <p class="mt-2 text-lg">Una serie intrigante que explora la vida de Merlina Addams.</p>
+    </section>
+
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-bold mb-5">Personajes</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="card bg-white rounded-lg shadow p-5">
+                <h4 class="font-semibold">Merlina Addams</h4>
+                <p>La protagonista con un oscuro sentido del humor.</p>
             </div>
-        </section>
-
-        <section class="my-10">
-            <h2 class="text-3xl font-semibold text-center mb-5">Contáctanos</h2>
-            <form class="max-w-lg mx-auto bg-white p-5 rounded-lg shadow-md">
-                <label class="block mb-2">
-                    Nombre:
-                    <input type="text" class="w-full p-2 border border-gray-300 rounded" required>
-                </label>
-                <label class="block mb-2">
-                    Correo Electrónico:
-                    <input type="email" class="w-full p-2 border border-gray-300 rounded" required>
-                </label>
-                <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded mt-4">Enviar</button>
-            </form>
-        </section>
-
-        <section class="my-10">
-            <h2 class="text-3xl font-semibold text-center mb-5">Síguenos</h2>
-            <div class="flex justify-center space-x-4">
-                <a href="#" aria-label="Facebook" class="text-blue-600"><img src="https://placehold.co/200x100/6B7280/FFFFFF?text=Facebook" alt="Logo de Facebook" loading="lazy"></a>
-                <a href="#" aria-label="Twitter" class="text-blue-600"><img src="https://placehold.co/200x100/6B7280/FFFFFF?text=Twitter" alt="Logo de Twitter" loading="lazy"></a>
-                <a href="#" aria-label="Instagram" class="text-blue-600"><img src="https://placehold.co/200x100/6B7280/FFFFFF?text=Instagram" alt="Logo de Instagram" loading="lazy"></a>
+            <div class="card bg-white rounded-lg shadow p-5">
+                <h4 class="font-semibold">Gómez Addams</h4>
+                <p>El carismático padre de Merlina.</p>
             </div>
-        </section>
-    </main>
+            <div class="card bg-white rounded-lg shadow p-5">
+                <h4 class="font-semibold">Morticia Addams</h4>
+                <p>La madre elegante y misteriosa.</p>
+            </div>
+        </div>
+    </section>
 
-    <footer class="text-center py-6 bg-gray-800 text-white">
-        <p>&copy; 2023 Merlina. Todos los derechos reservados.</p>
-        <p>Ubicación: Netflix, Inc.</p>
-    </footer>
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-bold mb-5">Contáctanos</h3>
+        <form id="contact" class="bg-white rounded-lg shadow p-5">
+            <label class="block mb-2" for="name">Nombre:</label>
+            <input type="text" id="name" class="w-full border rounded p-2 mb-4" placeholder="Tu nombre" required>
+            
+            <label class="block mb-2" for="email">Correo Electrónico:</label>
+            <input type="email" id="email" class="w-full border rounded p-2 mb-4" placeholder="Tu correo" required>
+            
+            <label class="block mb-2" for="phone">Teléfono:</label>
+            <input type="tel" id="phone" class="w-full border rounded p-2 mb-4" placeholder="Tu teléfono" required>
+            
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Enviar</button>
+        </form>
+    </section>
+
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-bold mb-5">Ubicación</h3>
+        <p>📍 Dirección: Calle de la Oscuridad, 123</p>
+        <p>📞 Teléfono: (123) 456-7890</p>
+        <p>🕰️ Horarios: Lunes a Viernes, 10:00 - 18:00</p>
+    </section>
+
+    <section class="bg-gray-200 py-10">
+        <h3 class="text-3xl font-bold text-center mb-5">Síguenos</h3>
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="text-blue-600">Facebook</a>
+            <a href="#" class="text-blue-400">Twitter</a>
+            <a href="#" class="text-pink-600">Instagram</a>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div>
+            <h4 class="font-bold">Merlina</h4>
+            <p>La serie que no te puedes perder.</p>
+        </div>
+        <div>
+            <h4 class="font-bold">Información</h4>
+            <ul>
+                <li><a href="#" class="text-gray-400">Sobre nosotros</a></li>
+                <li><a href="#" class="text-gray-400">Términos</a></li>
+                <li><a href="#" class="text-gray-400">Privacidad</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold">Contacto</h4>
+            <ul>
+                <li><a href="#" class="text-gray-400">Soporte</a></li>
+                <li><a href="#" class="text-gray-400">Ayuda</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold">Redes Sociales</h4>
+            <ul>
+                <li><a href="#" class="text-gray-400">Facebook</a></li>
+                <li><a href="#" class="text-gray-400">Twitter</a></li>
+                <li><a href="#" class="text-gray-400">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
 
   <!-- Chatwoot -->
   
@@ -72,4 +120,3 @@
   <script src="main.js"></script>
 </body>
 </html>
-```
