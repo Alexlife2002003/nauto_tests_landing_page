@@ -1,0 +1,124 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre el sabor auténtico de Merkuria Café, donde cada taza cuenta una historia.">
+    <meta property="og:title" content="Merkuria Café">
+    <meta property="og:description" content="Sumérgete en la experiencia del café artesanal.">
+    <meta property="og:image" content="https://example.com/imagen-cafe.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Merkuria Café">
+    <meta name="twitter:description" content="Disfruta de nuestros sabores únicos.">
+    <meta name="twitter:image" content="https://example.com/imagen-cafe.jpg">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA...">
+    <title>Merkuria Café</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+
+  <link rel="stylesheet" href="styles.css" /></head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        <nav class="flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">Merkuria Café</h1>
+            <div class="hidden md:flex space-x-4">
+                <a href="#productos" class="text-gray-700 hover:text-gray-900">Productos</a>
+                <a href="#testimonios" class="text-gray-700 hover:text-gray-900">Testimonios</a>
+                <a href="#contacto" class="text-gray-700 hover:text-gray-900">Contacto</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#productos" class="block px-4 py-2">Productos</a>
+            <a href="#testimonios" class="block px-4 py-2">Testimonios</a>
+            <a href="#contacto" class="block px-4 py-2">Contacto</a>
+        </div>
+    </header>
+
+    <section class="hero text-white py-20 text-center">
+        <h1 class="text-5xl font-bold">Descubre el Sabor de Merkuria Café</h1>
+        <p class="mt-4 text-lg">Café artesanal con historia y pasión.</p>
+        <div class="mt-8">
+            <a href="#productos" class="bg-accent text-white px-6 py-2 rounded-lg">Ver Productos</a>
+            <a href="#contacto" class="bg-transparent border border-white text-white px-6 py-2 rounded-lg ml-4">Contáctanos</a>
+        </div>
+    </section>
+
+    <main class="py-10">
+        <section id="productos" class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article class="card p-4 bg-white rounded-lg">
+                <h2 class="text-xl font-semibold">Clásico</h2>
+                <p>Un sabor puro y auténtico.</p>
+            </article>
+            <article class="card p-4 bg-white rounded-lg">
+                <h2 class="text-xl font-semibold">Chocolate</h2>
+                <p>Un deleite para los amantes del chocolate.</p>
+            </article>
+            <article class="card p-4 bg-white rounded-lg">
+                <h2 class="text-xl font-semibold">Cajeta</h2>
+                <p>Un toque dulce y cremoso.</p>
+            </article>
+            <article class="card p-4 bg-white rounded-lg">
+                <h2 class="text-xl font-semibold">Pistache</h2>
+                <p>Un sabor único y sorprendente.</p>
+            </article>
+        </section>
+
+        <section id="testimonios" class="bg-gray-100 py-10">
+            <h2 class="text-3xl text-center font-semibold">Lo que dicen nuestros clientes</h2>
+            <div class="container mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-4 bg-white rounded-lg">
+                    <p>"El mejor café que he probado!"</p>
+                    <p class="text-right">- Juan P.</p>
+                </div>
+                <div class="card p-4 bg-white rounded-lg">
+                    <p>"Un sabor que me transporta."</p>
+                    <p class="text-right">- Ana L.</p>
+                </div>
+                <div class="card p-4 bg-white rounded-lg">
+                    <p>"Increíbles combinaciones de sabores."</p>
+                    <p class="text-right">- Carlos M.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-10">
+            <h2 class="text-3xl text-center font-semibold">Contáctanos</h2>
+            <form class="max-w-lg mx-auto mt-6">
+                <label class="block mb-2" for="nombre">Nombre:</label>
+                <input class="w-full p-2 border rounded" type="text" id="nombre" required placeholder="Tu nombre">
+                <label class="block mb-2 mt-4" for="email">Email:</label>
+                <input class="w-full p-2 border rounded" type="email" id="email" required placeholder="Tu email">
+                <label class="block mb-2 mt-4" for="mensaje">Mensaje:</label>
+                <textarea class="w-full p-2 border rounded" id="mensaje" required placeholder="Tu mensaje"></textarea>
+                <button type="submit" class="bg-accent text-white px-4 py-2 mt-4 rounded">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Merkuria Café. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="https://twitter.com" class="text-white">Twitter</a>
+                <a href="https://facebook.com" class="text-white">Facebook</a>
+                <a href="https://instagram.com" class="text-white">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+  <!-- Chatwoot -->
+  
+
+  <script src="main.js"></script>
+</body>
+
+</html>
