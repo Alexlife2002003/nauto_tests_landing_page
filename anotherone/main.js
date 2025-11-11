@@ -1,16 +1,18 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+document.addEventListener('DOMContentLoaded', function() {
+            const ctas = document.querySelectorAll('.cta');
+            ctas.forEach(cta => {
+                cta.addEventListener('click', () => {
+                    console.log('CTA principal clicado');
                 });
             });
-        });
-
-        document.querySelector('form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            console.log('Formulario enviado');
+            const scrollLinks = document.querySelectorAll('a[href^="#"]');
+            scrollLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
         });
 
 (function(d,t){
