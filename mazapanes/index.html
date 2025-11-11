@@ -1,0 +1,90 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los deliciosos mazapanes de Merkuria, elaborados con ingredientes de la más alta calidad.">
+    <meta name="keywords" content="mazapanes, Merkuria, dulces, postres, chocolate, cajeta, pistache">
+    <meta name="author" content="Merkuria Mazapanes">
+    <title>Merkuria Mazapanes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+
+  <link rel="stylesheet" href="styles.css" /></head>
+<body>
+    <header>
+        <nav class="sticky top-0 z-10 p-4 flex justify-between items-center">
+            <div class="text-xl font-bold">Merkuria Mazapanes</div>
+            <ul class="flex space-x-4">
+                <li><a href="#hero" class="hover:text-brown-600">Inicio</a></li>
+                <li><a href="#productos" class="hover:text-brown-600">Productos</a></li>
+                <li><a href="#contacto" class="hover:text-brown-600">Contacto</a></li>
+                <li><a href="#ubicacion" class="hover:text-brown-600">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <h1 class="text-4xl font-bold mb-2">Deliciosos Mazapanes Artesanales</h1>
+            <p class="mb-4">Descubre la historia y tradición detrás de nuestros mazapanes.</p>
+            <button class="bg-brown-500 text-white px-4 py-2 rounded">Ver Productos</button>
+            <img src="placeholder.jpg" alt="Mazapanes de Merkuria" class="mt-4 w-1/2 mx-auto">
+        </section>
+
+        <section id="productos" class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card p-4">
+                <h2 class="font-bold">Clásico</h2>
+                <p>Delicioso mazapán tradicional.</p>
+            </div>
+            <div class="card p-4">
+                <h2 class="font-bold">Chocolate</h2>
+                <p>Un toque de chocolate irresistible.</p>
+            </div>
+            <div class="card p-4">
+                <h2 class="font-bold">Cajeta</h2>
+                <p>Con el sabor dulce de la cajeta.</p>
+            </div>
+            <div class="card p-4">
+                <h2 class="font-bold">Pistache</h2>
+                <p>Un sabor único y delicioso.</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="p-6">
+            <h2 class="text-2xl font-bold mb-4">Contáctanos</h2>
+            <form id="contactForm" class="space-y-4">
+                <input type="text" placeholder="Nombre" required class="border p-2 w-full rounded">
+                <input type="email" placeholder="Email" required class="border p-2 w-full rounded">
+                <textarea placeholder="Mensaje" required class="border p-2 w-full rounded"></textarea>
+                <button type="submit" class="bg-brown-500 text-white px-4 py-2 rounded">Enviar</button>
+            </form>
+        </section>
+
+        <section id="ubicacion" class="p-6">
+            <h2 class="text-2xl font-bold mb-4">Ubicación y Horarios</h2>
+            <p>Estamos ubicados en el corazón de la ciudad.</p>
+            <p>Horario: Lunes a Sábado, 9 AM - 6 PM</p>
+            <div id="map" class="mt-4 h-64 bg-gray-300">Mapa Placeholder</div>
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="mb-4">Síguenos en nuestras redes sociales:</div>
+        <div>
+            <a href="#" class="text-white mx-2">Twitter</a>
+            <a href="#" class="text-white mx-2">Facebook</a>
+            <a href="#" class="text-white mx-2">Instagram</a>
+        </div>
+    </footer>
+
+    
+
+  <!-- Chatwoot -->
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
+```
