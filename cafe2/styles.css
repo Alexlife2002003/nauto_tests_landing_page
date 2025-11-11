@@ -1,0 +1,35 @@
+:root {
+            --color-primary: #4B3C32;
+            --color-secondary: #E1C6B5;
+            --color-accent: #A57C6D;
+            --color-background: #F5F5F5;
+            --color-text: #333333;
+            --radius-xl: 1rem;
+            --shadow-soft: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .card {
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hero {
+            background: linear-gradient(to right, var(--color-primary), var(--color-accent));
+        }
