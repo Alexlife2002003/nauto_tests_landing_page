@@ -2,172 +2,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merlina - Landing Page</title>
-    <meta name="description" content="Descubre la serie de Netflix Merlina, sus personajes y más.">
-    <link rel="canonical" href="https://example.com/">
-    <meta property="og:title" content="Merlina - Landing Page">
-    <meta property="og:description" content="Descubre la serie de Netflix Merlina, sus personajes y más.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1632276418221-6b7b1e2d1f3b">
-    <meta property="og:url" content="https://example.com/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Merlina - Landing Page">
-    <meta name="twitter:description" content="Descubre la serie de Netflix Merlina, sus personajes y más.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1632276418221-6b7b1e2d1f3b">
-    
+    <meta name="description" content="Descubre la serie Merlina de Netflix, un emocionante viaje lleno de misterio y aventura.">
+    <link rel="canonical" href="https://example.com/merlina">
+    <meta property="og:title" content="Merlina - Netflix">
+    <meta property="og:description" content="Sumérgete en la intrigante historia de Merlina.">
+    <meta property="og:image" content="https://example.com/merlina.jpg">
+    <meta property="og:url" content="https://example.com/merlina">
+    <title>Merlina - Netflix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     
 
   <link rel="stylesheet" href="styles.css" /></head>
-<body>
-    <header class="sticky top-0 bg-white shadow">
-        <nav class="flex justify-between items-center p-4">
-            <h1 class="text-2xl font-bold">Merlina</h1>
-            <div>
-                <a href="#features" class="px-4">Características</a>
-                <a href="#services" class="px-4">Beneficios</a>
-                <a href="#contact" class="px-4">Contacto</a>
-                <a href="#faq" class="px-4"><button class="bg-purple-600 text-white py-2 px-4 rounded">¡Únete!</button></a>
+<body class="bg-gray-100">
+
+<header class="sticky top-0 bg-white shadow">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold">Merlina</h1>
+        <a href="#contact" class="bg-purple-600 text-white px-4 py-2 rounded">Contáctanos</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero text-white py-20 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-extrabold">Descubre el misterio de Merlina</h2>
+            <p class="mt-4 text-lg">Una serie llena de intriga y aventuras en la Academia Nevermore.</p>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-bold text-center mb-6">Personajes</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="card bg-white rounded-lg shadow p-4">
+                <h4 class="font-semibold">Merlina Addams</h4>
+                <p>La protagonista, con un oscuro sentido del humor.</p>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section class="hero text-white text-center py-16">
-            <img src="https://images.unsplash.com/photo-1632276418221-6b7b1e2d1f3b" alt="Promoción de la serie Merlina" class="mx-auto mb-4 w-1/2 rounded-lg">
-            <h2 class="text-4xl font-bold mb-2">Descubre el oscuro mundo de Merlina</h2>
-            <p class="mb-4">Una serie que sigue las aventuras de Merlina Addams en la Academia Nevermore.</p>
-            <a href="#features" class="bg-white text-purple-600 py-2 px-4 rounded">Ver Características</a>
-            <a href="#contact" class="bg-white text-purple-600 py-2 px-4 rounded ml-4">Contáctanos</a>
-        </section>
-        <section id="features" class="py-16">
-            <h3 class="text-3xl font-bold text-center mb-8">Personajes</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="card p-4 bg-white">
-                    <h4 class="font-bold">Merlina</h4>
-                    <ul>
-                        <li>Inteligente</li>
-                        <li>Oscura</li>
-                        <li>Intrépida</li>
-                    </ul>
-                    <a href="#" class="text-purple-600">Más info</a>
-                </div>
-                <div class="card p-4 bg-white">
-                    <h4 class="font-bold">Gómez</h4>
-                    <ul>
-                        <li>Carismático</li>
-                        <li>Divertido</li>
-                        <li>Amoroso</li>
-                    </ul>
-                    <a href="#" class="text-purple-600">Más info</a>
-                </div>
-                <div class="card p-4 bg-white">
-                    <h4 class="font-bold">Morticia</h4>
-                    <ul>
-                        <li>Elegante</li>
-                        <li>Fuerte</li>
-                        <li>Protectora</li>
-                    </ul>
-                    <a href="#" class="text-purple-600">Más info</a>
-                </div>
+            <div class="card bg-white rounded-lg shadow p-4">
+                <h4 class="font-semibold">Enid Sinclair</h4>
+                <p>La mejor amiga de Merlina, siempre lista para ayudar.</p>
             </div>
-        </section>
-        <section id="services" class="py-16 bg-gray-100">
-            <h3 class="text-3xl font-bold text-center mb-8">Beneficios</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="card p-4 bg-white">
-                    <span>✨</span>
-                    <h4 class="font-bold">Entretenimiento</h4>
-                    <p>Disfruta de una trama cautivadora y emocionante.</p>
-                </div>
-                <div class="card p-4 bg-white">
-                    <span>📚</span>
-                    <h4 class="font-bold">Desarrollo de Personajes</h4>
-                    <p>Conoce a fondo a cada uno de los personajes.</p>
-                </div>
-                <div class="card p-4 bg-white">
-                    <span>👻</span>
-                    <h4 class="font-bold">Misterio</h4>
-                    <p>Sumérgete en un mundo lleno de sorpresas.</p>
-                </div>
-            </div>
-        </section>
-        <section id="social-proof" class="py-16">
-            <h3 class="text-3xl font-bold text-center mb-8">Opiniones de los Fans</h3>
-            <div class="flex justify-center space-x-4">
-                <div class="bg-white p-4 rounded-full shadow">Fan 1</div>
-                <div class="bg-white p-4 rounded-full shadow">Fan 2</div>
-                <div class="bg-white p-4 rounded-full shadow">Fan 3</div>
-            </div>
-        </section>
-        <section id="contact" class="py-16 bg-gray-100">
-            <h3 class="text-3xl font-bold text-center mb-8">Contáctanos</h3>
-            <form class="max-w-lg mx-auto">
-                <label for="name" class="block mb-2">Nombre</label>
-                <input type="text" id="name" class="border w-full p-2 mb-4" required>
-                
-                <label for="email" class="block mb-2">Email</label>
-                <input type="email" id="email" class="border w-full p-2 mb-4" required>
-                
-                <label for="phone" class="block mb-2">Teléfono</label>
-                <input type="tel" id="phone" class="border w-full p-2 mb-4">
-                
-                <label for="interest" class="block mb-2">Interés</label>
-                <select id="interest" class="border w-full p-2 mb-4">
-                    <option value="info">Información</option>
-                    <option value="feedback">Comentarios</option>
-                </select>
-                
-                <button type="submit" class="bg-purple-600 text-white py-2 px-4 rounded">Enviar</button>
-            </form>
-        </section>
-        <section id="faq" class="py-16">
-            <h3 class="text-3xl font-bold text-center mb-8">Preguntas Frecuentes</h3>
-            <details>
-                <summary>¿Cuándo se estrena la serie?</summary>
-                <p>La serie se estrena el 23 de noviembre.</p>
-            </details>
-            <details>
-                <summary>¿Dónde puedo verla?</summary>
-                <p>Está disponible en Netflix.</p>
-            </details>
-            <details>
-                <summary>¿Hay más temporadas planeadas?</summary>
-                <p>Sí, la producción está trabajando en nuevas temporadas.</p>
-            </details>
-        </section>
-        <section id="location" class="py-16 bg-gray-100">
-            <h3 class="text-3xl font-bold text-center mb-8">Ubicación</h3>
-            <p>📍 Dirección: Calle de la Oscuridad, 123</p>
-            <p>📞 Teléfono: 123-456-7890</p>
-            <p>🕒 Horarios: Lunes a Viernes, 9:00 - 18:00</p>
-        </section>
-    </main>
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div>
-                <h4 class="font-bold">Merlina</h4>
-                <p>La serie que te atrapará.</p>
-            </div>
-            <div>
-                <h4 class="font-bold">Información</h4>
-                <ul>
-                    <li><a href="#features" class="text-gray-400">Características</a></li>
-                    <li><a href="#services" class="text-gray-400">Beneficios</a></li>
-                    <li><a href="#faq" class="text-gray-400">FAQ</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold">Contacto</h4>
-                <p>Email: contacto@merlina.com</p>
-                <p>Teléfono: 123-456-7890</p>
-            </div>
-            <div>
-                <h4 class="font-bold">Redes Sociales</h4>
-                <p>📸 Instagram</p>
-                <p>🐦 Twitter</p>
-                <p>📘 Facebook</p>
+            <div class="card bg-white rounded-lg shadow p-4">
+                <h4 class="font-semibold">Gomez Addams</h4>
+                <p>El carismático padre de Merlina.</p>
             </div>
         </div>
-    </footer>
-    
+    </section>
+
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-bold text-center mb-6">Contáctanos</h3>
+        <form id="contact" class="bg-white rounded-lg shadow p-6">
+            <label for="name" class="block mb-2">Nombre:</label>
+            <input type="text" id="name" class="border rounded w-full p-2 mb-4" required>
+            <label for="email" class="block mb-2">Correo Electrónico:</label>
+            <input type="email" id="email" class="border rounded w-full p-2 mb-4" required>
+            <label for="phone" class="block mb-2">Teléfono:</label>
+            <input type="tel" id="phone" class="border rounded w-full p-2 mb-4">
+            <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded w-full">Enviar</button>
+        </form>
+    </section>
+
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-bold text-center mb-6">Ubicación</h3>
+        <div class="bg-white rounded-lg shadow p-4">
+            <p>📍 Dirección: Calle Ficticia 123, Ciudad</p>
+            <p>📞 Teléfono: (123) 456-7890</p>
+            <p>🕰️ Horarios: Lunes a Viernes, 10:00 - 18:00</p>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-bold text-center mb-6">Redes Sociales</h3>
+        <div class="flex justify-center space-x-4">
+            <a href="https://facebook.com" class="text-blue-600">Facebook</a>
+            <a href="https://twitter.com" class="text-blue-400">Twitter</a>
+            <a href="https://instagram.com" class="text-pink-600">Instagram</a>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div>
+            <h4 class="font-bold">Merlina</h4>
+            <p>La serie que no te puedes perder.</p>
+        </div>
+        <div>
+            <h4 class="font-bold">Información</h4>
+            <ul>
+                <li><a href="#" class="text-gray-400">Sobre Nosotros</a></li>
+                <li><a href="#" class="text-gray-400">Términos</a></li>
+                <li><a href="#" class="text-gray-400">Política de Privacidad</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold">Contacto</h4>
+            <p>Email: contacto@merlina.com</p>
+        </div>
+        <div>
+            <h4 class="font-bold">Síguenos</h4>
+            <a href="https://facebook.com" class="text-gray-400">Facebook</a><br>
+            <a href="https://twitter.com" class="text-gray-400">Twitter</a><br>
+            <a href="https://instagram.com" class="text-gray-400">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+
+
 
   <!-- Chatwoot -->
   
