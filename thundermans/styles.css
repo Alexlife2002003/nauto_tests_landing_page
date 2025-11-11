@@ -2,11 +2,7 @@ body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
         .hero {
-            background: linear-gradient(to bottom right, #ffcc00, #ff6699);
-        }
-        .card {
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
+            background-image: url('https://source.unsplash.com/1600x900/?comics,superheroes');
+            background-size: cover;
+            background-position: center;
         }
