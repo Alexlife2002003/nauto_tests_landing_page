@@ -1,0 +1,7 @@
+body { font-family: 'Arial', sans-serif; }
+        .hero { background: linear-gradient(to right, #f3e5ab, #d5c8a1); }
+        .card { transition: transform 0.3s; }
+        .card:hover { transform: scale(1.05); }
+        .sticky-nav { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+        .footer { background-color: #333; color: white; }
+        .social-icons svg { width: 24px; height: 24px; }
