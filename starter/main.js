@@ -1,13 +1,3 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                console.log('CTA clicked:', this.textContent);
-            });
-        });
-
 (function(d,t){
       var BASE_URL="https://app.chatwoot.com";
       var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
