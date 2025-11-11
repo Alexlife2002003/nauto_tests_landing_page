@@ -1,0 +1,110 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la tradición de Merkuria Mazapanes, sabores únicos y artesanales.">
+    <meta name="keywords" content="mazapanes, dulces, Merkuria, sabores, artesanal">
+    <meta name="author" content="Merkuria Mazapanes">
+    <title>Merkuria Mazapanes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+
+  <link rel="stylesheet" href="styles.css" /></head>
+<body class="bg-gray-50">
+
+<header>
+    <nav class="sticky top-0 z-10 bg-white sticky-nav p-4 flex justify-between">
+        <div class="text-2xl font-bold">Merkuria</div>
+        <ul class="flex space-x-4">
+            <li><a href="#hero" class="text-gray-700 hover:text-gray-900">Inicio</a></li>
+            <li><a href="#sabores" class="text-gray-700 hover:text-gray-900">Sabores</a></li>
+            <li><a href="#testimonios" class="text-gray-700 hover:text-gray-900">Testimonios</a></li>
+            <li><a href="#contacto" class="text-gray-700 hover:text-gray-900">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="hero" class="hero-bg p-10 text-center">
+        <h1 class="text-4xl font-bold mb-2">Bienvenidos a Merkuria Mazapanes</h1>
+        <p class="text-lg mb-4">La tradición y el sabor en cada bocado.</p>
+        <img src="placeholder.jpg" alt="Mazapanes Merkuria" class="mx-auto mb-4 w-1/2 rounded-lg shadow-lg">
+        <button class="bg-brown-500 text-white px-4 py-2 rounded">¡Prueba nuestros mazapanes!</button>
+    </section>
+
+    <section id="sabores" class="p-10">
+        <h2 class="text-3xl font-bold text-center mb-6">Nuestros Sabores</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+                <h3 class="font-semibold">Clásico</h3>
+                <p>El sabor tradicional que nunca falla.</p>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+                <h3 class="font-semibold">Chocolate</h3>
+                <p>Una deliciosa combinación de chocolate y mazapán.</p>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+                <h3 class="font-semibold">Cajeta</h3>
+                <p>Un toque dulce de cajeta en cada bocado.</p>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+                <h3 class="font-semibold">Pistache</h3>
+                <p>La mezcla perfecta de mazapán y pistache.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="p-10">
+        <h2 class="text-3xl font-bold text-center mb-6">Testimonios</h2>
+        <blockquote class="text-center italic mb-4">"Los mejores mazapanes que he probado!" - Juan Pérez</blockquote>
+        <blockquote class="text-center italic">"Un sabor auténtico y delicioso." - María López</blockquote>
+    </section>
+
+    <section id="contacto" class="p-10">
+        <h2 class="text-3xl font-bold text-center mb-6">Contacto</h2>
+        <form id="contactForm" class="max-w-md mx-auto">
+            <label for="nombre" class="block mb-2">Nombre:</label>
+            <input type="text" id="nombre" class="border rounded w-full p-2 mb-4" required>
+            <label for="email" class="block mb-2">Email:</label>
+            <input type="email" id="email" class="border rounded w-full p-2 mb-4" required>
+            <label for="mensaje" class="block mb-2">Mensaje:</label>
+            <textarea id="mensaje" class="border rounded w-full p-2 mb-4" required></textarea>
+            <button type="submit" class="bg-brown-500 text-white px-4 py-2 rounded">Enviar</button>
+        </form>
+    </section>
+
+    <section id="ubicacion" class="p-10">
+        <h2 class="text-3xl font-bold text-center mb-6">Ubicación y Horarios</h2>
+        <p class="text-center">Estamos ubicados en Calle Falsa 123, Ciudad. Horarios: Lunes a Viernes 9am - 6pm.</p>
+        <div class="text-center mt-4">
+            <img src="map-placeholder.jpg" alt="Mapa de ubicación" class="mx-auto w-1/2 rounded-lg shadow-lg">
+        </div>
+    </section>
+</main>
+
+<footer class="footer-bg text-white p-6">
+    <div class="flex justify-between">
+        <div>
+            <h3 class="font-bold">Síguenos</h3>
+            <a href="#" class="social-icon"><img src="twitter.svg" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="facebook.svg" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="instagram.svg" alt="Instagram"></a>
+        </div>
+        <div>
+            <h3 class="font-bold">Enlaces Rápidos</h3>
+            <a href="#hero" class="text-white">Inicio</a><br>
+            <a href="#sabores" class="text-white">Sabores</a><br>
+            <a href="#contacto" class="text-white">Contacto</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+  <!-- Chatwoot -->
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
