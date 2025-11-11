@@ -1,14 +1,12 @@
 :root {
             --color-primary: #6F4C3E;
             --color-secondary: #D9CBAE;
-            --color-background: #F5F5F5;
-            --color-text: #333;
+            --bg-soft: #F5F5F5;
             --radius-xl: 1rem;
-            --shadow-soft: 0 4px 10px rgba(0, 0, 0, 0.1);
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: var(--color-background);
+            font-family: 'Georgia', serif;
         }
         .card {
             border-radius: var(--radius-xl);
@@ -16,11 +14,16 @@
             transition: transform 0.3s;
         }
         .card:hover {
-            transform: translateY(-5px);
+            transform: scale(1.05);
         }
-        .gradient-bg {
-            background: linear-gradient(135deg, #D9CBAE 0%, #6F4C3E 100%);
+        .accordion {
+            cursor: pointer;
+            padding: 1rem;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s;
         }
-        .hidden {
-            display: none;
+        .accordion.active, .accordion:hover {
+            background-color: var(--color-secondary);
         }
