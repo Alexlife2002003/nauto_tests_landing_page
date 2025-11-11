@@ -1,14 +1,11 @@
-document.getElementById('menu-toggle').addEventListener('click', function() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('hidden');
-        });
-
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const messageDiv = document.getElementById('form-message');
-            messageDiv.textContent = "¡Mensaje enviado con éxito!";
-            messageDiv.classList.remove('hidden');
-            this.reset();
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                console.log('CTA Clicked:', this.textContent);
+            });
         });
 
 (function(d,t){
