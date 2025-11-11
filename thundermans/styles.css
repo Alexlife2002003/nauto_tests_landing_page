@@ -1,0 +1,20 @@
+:root {
+            --color-primary: #ff4757;
+            --color-secondary: #1e90ff;
+            --bg-soft: #f7f9fc;
+            --radius-xl: 1rem;
+            --shadow-soft: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+        }
+        .card {
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-soft);
+        }
+        .accordion {
+            background: var(--bg-soft);
+        }
