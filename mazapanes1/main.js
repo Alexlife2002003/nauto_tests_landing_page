@@ -1,16 +1,16 @@
-document.querySelector('#contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Formulario enviado con éxito.');
-    });
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+document.querySelector('nav').addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                const targetId = e.target.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+            }
         });
-    });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Formulario enviado correctamente.');
+            this.reset();
+        });
 
 (function(d,t){
       var BASE_URL="https://app.chatwoot.com";
