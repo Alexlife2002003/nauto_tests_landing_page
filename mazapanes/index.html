@@ -1,90 +1,185 @@
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre los deliciosos mazapanes de Merkuria, hechos con amor y tradición.">
-    <meta name="keywords" content="mazapanes, Merkuria, dulces, postres, sabor">
-    <meta name="author" content="Merkuria Mazapanes">
-    <title>Merkuria Mazapanes</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="description" content="Descubre la tradición de Merkuria Mazapanes, con sabores artesanales y una historia rica.">
+    <link rel="canonical" href="https://example.com/mazapanes">
+    <meta property="og:title" content="Merkuria Mazapanes">
+    <meta property="og:description" content="Prueba nuestros deliciosos mazapanes artesanales.">
+    <meta property="og:image" content="placeholder.jpg">
+    <meta property="og:url" content="https://example.com/mazapanes">
+    <title>mazapanes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     
 
   <link rel="stylesheet" href="styles.css" /></head>
-
-<body class="bg-gray-100 text-gray-800">
-    <header>
-        <nav class="sticky top-0 bg-white p-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Merkuria Mazapanes</h1>
-            <ul class="flex space-x-4">
-                <li><a href="#hero" class="hover:text-gray-600">Inicio</a></li>
-                <li><a href="#productos" class="hover:text-gray-600">Productos</a></li>
-                <li><a href="#contacto" class="hover:text-gray-600">Contacto</a></li>
-                <li><a href="#ubicacion" class="hover:text-gray-600">Ubicación</a></li>
-            </ul>
+<body>
+    <header class="sticky top-0 bg-white shadow">
+        <nav class="flex justify-between p-4">
+            <section style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/28411948/pexels-photo-28411948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center; justify-content: center; text-align: center;"><h1 class="text-lg font-bold">Merkuria Mazapanes</h1></section>
+            <a href="#contact" class="bg-brown-500 text-white px-4 py-2 rounded">Contáctanos</a>
         </nav>
     </header>
-
     <main>
-        <section id="hero" class="hero p-10 text-center">
-            <h2 class="text-4xl font-bold mb-2">Deliciosos Mazapanes</h2>
-            <p class="mb-4">Hechos con amor y tradición, descubre nuestros sabores únicos.</p>
-            <button onclick="trackClick()" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Ver Productos</button>
-            <img src="placeholder.jpg" alt="Mazapanes" class="mt-4 mx-auto w-1/2 rounded-lg">
+        <section class="hero text-center py-20">
+            <h2 class="text-4xl font-bold">La Tradición del Mazapán</h2>
+            <p class="mt-4 text-lg">Descubre nuestros sabores artesanales: clásico, chocolate, cajeta, pistache.</p>
+            <div class="mt-6">
+                <a href="#productos" class="bg-brown-600 text-white px-6 py-3 rounded">Ver Productos</a>
+                <a href="#beneficios" class="bg-white text-brown-600 border border-brown-600 px-6 py-3 rounded ml-4">Ver Beneficios</a>
+            </div>
         </section>
 
-        <section id="productos" class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <article class="card bg-white p-5 shadow-md">
-                <h3 class="font-semibold">Clásico</h3>
-                <p>El sabor tradicional que nunca pasa de moda.</p>
-            </article>
-            <article class="card bg-white p-5 shadow-md">
-                <h3 class="font-semibold">Chocolate</h3>
-                <p>Una deliciosa combinación de chocolate y mazapán.</p>
-            </article>
-            <article class="card bg-white p-5 shadow-md">
-                <h3 class="font-semibold">Cajeta</h3>
-                <p>Un toque dulce con el sabor de la cajeta.</p>
-            </article>
-            <article class="card bg-white p-5 shadow-md">
-                <h3 class="font-semibold">Pistache</h3>
-                <p>Un sabor único que te sorprenderá.</p>
-            </article>
+        <section id="productos" class="py-10">
+            <h3 class="text-2xl font-semibold text-center">Nuestros Productos</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div class="card bg-white rounded-lg shadow p-4">
+<img src="https://images.pexels.com/photos/33582453/pexels-photo-33582453.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Imagen ilustrativa 1: Crea una landing page refinada, para mostrar Merkuria Mazapanes. Usa un color cafe claro, con paleta de colores neutrales para una vista limpia y artesanal. Hero section con foto de calidad del producto, pequeña descripcion sobre la historia de los mazapanes, mostrar sabores (clásico, chocolate, cajeta, pistache) , Incluye secciónenles de ingredientes, incluye testimonios, incluye información de ubicación, de contacto, una formulario de contacto. Usa cartas redondas con sombras ligeras. La tipografía debe ser elegante. Optimizado para uso movil. Agregar tags de Twitter, Facebook e instagram" loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+
+                    <h4 class="font-bold">Mazapán Clásico</h4>
+                    <ul class="mt-2">
+                        <li>Hecho a mano</li>
+                        <li>Ingredientes naturales</li>
+                        <li>Tradición familiar</li>
+                    </ul>
+                    <a href="#" class="text-brown-500 font-semibold">Comprar</a>
+                </div>
+                <div class="card bg-white rounded-lg shadow p-4">
+<img src="https://images.pexels.com/photos/17445606/pexels-photo-17445606.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Imagen ilustrativa 2: Crea una landing page refinada, para mostrar Merkuria Mazapanes. Usa un color cafe claro, con paleta de colores neutrales para una vista limpia y artesanal. Hero section con foto de calidad del producto, pequeña descripcion sobre la historia de los mazapanes, mostrar sabores (clásico, chocolate, cajeta, pistache) , Incluye secciónenles de ingredientes, incluye testimonios, incluye información de ubicación, de contacto, una formulario de contacto. Usa cartas redondas con sombras ligeras. La tipografía debe ser elegante. Optimizado para uso movil. Agregar tags de Twitter, Facebook e instagram" loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+
+                    <h4 class="font-bold">Mazapán de Chocolate</h4>
+                    <ul class="mt-2">
+                        <li>Rico sabor a chocolate</li>
+                        <li>Perfecto para regalar</li>
+                        <li>Sin conservantes</li>
+                    </ul>
+                    <a href="#" class="text-brown-500 font-semibold">Comprar</a>
+                </div>
+                <div class="card bg-white rounded-lg shadow p-4">
+<img src="https://images.pexels.com/photos/31674375/pexels-photo-31674375.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Imagen ilustrativa 3: Crea una landing page refinada, para mostrar Merkuria Mazapanes. Usa un color cafe claro, con paleta de colores neutrales para una vista limpia y artesanal. Hero section con foto de calidad del producto, pequeña descripcion sobre la historia de los mazapanes, mostrar sabores (clásico, chocolate, cajeta, pistache) , Incluye secciónenles de ingredientes, incluye testimonios, incluye información de ubicación, de contacto, una formulario de contacto. Usa cartas redondas con sombras ligeras. La tipografía debe ser elegante. Optimizado para uso movil. Agregar tags de Twitter, Facebook e instagram" loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+
+                    <h4 class="font-bold">Mazapán de Cajeta</h4>
+                    <ul class="mt-2">
+                        <li>Delicia de cajeta</li>
+                        <li>Ideal para postres</li>
+                        <li>100% artesanal</li>
+                    </ul>
+                    <a href="#" class="text-brown-500 font-semibold">Comprar</a>
+                </div>
+                <div class="card bg-white rounded-lg shadow p-4">
+                    <h4 class="font-bold">Mazapán de Pistache</h4>
+                    <ul class="mt-2">
+                        <li>Sabor único</li>
+                        <li>Nutritivo y delicioso</li>
+                        <li>Hecho con amor</li>
+                    </ul>
+                    <a href="#" class="text-brown-500 font-semibold">Comprar</a>
+                </div>
+            </div>
         </section>
 
-        <section id="contacto" class="p-10">
-            <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
-            <form onsubmit="return validateForm()" class="flex flex-col space-y-4">
-                <input type="text" id="nombre" placeholder="Nombre" required class="border p-2 rounded">
-                <input type="email" id="email" placeholder="Email" required class="border p-2 rounded">
-                <textarea id="mensaje" placeholder="Mensaje" required class="border p-2 rounded"></textarea>
-                <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Enviar</button>
+        <section id="beneficios" class="py-10 bg-gray-100">
+            <h3 class="text-2xl font-semibold text-center">Beneficios de Nuestros Mazapanes</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div class="flex items-center bg-white rounded-lg shadow p-4">
+                    <svg class="w-8 h-8 text-brown-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"/></svg>
+                    <div>
+                        <h4 class="font-bold">Natural</h4>
+                        <p>Sin aditivos ni conservantes.</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-white rounded-lg shadow p-4">
+                    <svg class="w-8 h-8 text-brown-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"/></svg>
+                    <div>
+                        <h4 class="font-bold">Artesanal</h4>
+                        <p>Hechos a mano con amor.</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-white rounded-lg shadow p-4">
+                    <svg class="w-8 h-8 text-brown-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"/></svg>
+                    <div>
+                        <h4 class="font-bold">Tradición</h4>
+                        <p>Recetas familiares transmitidas por generaciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="py-10">
+            <h3 class="text-2xl font-semibold text-center">Testimonios</h3>
+            <div class="mt-6">
+                <blockquote class="bg-gray-200 p-4 rounded-lg shadow">
+                    <p>"Los mejores mazapanes que he probado, ¡simplemente deliciosos!"</p>
+                    <footer class="mt-2">— Juan Pérez</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="ubicacion" class="py-10 bg-gray-100">
+            <h3 class="text-2xl font-semibold text-center">Ubicación</h3>
+            <div class="mt-6 text-center">
+                <p>📍 Calle Falsa 123, Ciudad, País</p>
+                <p>📞 (123) 456-7890</p>
+                <p>🕰️ Lunes a Viernes: 9am - 5pm</p>
+            </div>
+        </section>
+
+        <section id="contact" class="py-10">
+            <h3 class="text-2xl font-semibold text-center">Contáctanos</h3>
+            <form class="mt-6 max-w-lg mx-auto">
+                <label class="block mb-2" for="name">Nombre</label>
+                <input class="w-full p-2 border rounded mb-4" type="text" id="name" placeholder="Tu nombre" required>
+                
+                <label class="block mb-2" for="email">Correo Electrónico</label>
+                <input class="w-full p-2 border rounded mb-4" type="email" id="email" placeholder="Tu correo" required>
+                
+                <label class="block mb-2" for="phone">Teléfono</label>
+                <input class="w-full p-2 border rounded mb-4" type="tel" id="phone" placeholder="Tu teléfono" required>
+                
+                <label class="block mb-2" for="message">Mensaje</label>
+                <textarea class="w-full p-2 border rounded mb-4" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                
+                <button type="submit" class="bg-brown-600 text-white px-6 py-3 rounded w-full">Enviar</button>
             </form>
         </section>
 
-        <section id="ubicacion" class="p-10">
-            <h2 class="text-3xl font-bold mb-4">Ubicación y Horarios</h2>
-            <p>Visítanos en nuestra tienda ubicada en el centro de la ciudad.</p>
-            <p>Horarios: Lunes a Sábado, 9:00 AM - 6:00 PM</p>
-            <div class="mt-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509575!2d144.9537353153167!3d-37.81720997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0c6f07%3A0x5045675218ceed30!2sYour%20Location!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+        <section class="py-10">
+            <details>
+                <summary class="text-2xl font-semibold">Preguntas Frecuentes</summary>
+                <div class="mt-4">
+                    <p><strong>¿Cuánto tardan en llegar los pedidos?</strong> Normalmente, entre 3 a 5 días hábiles.</p>
+                    <p><strong>¿Hacen envíos internacionales?</strong> Sí, hacemos envíos a varios países.</p>
+                </div>
+            </details>
         </section>
     </main>
 
-    <footer class="p-10 text-white">
-        <div class="flex justify-between">
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <div>
-                <h3 class="font-bold">Síguenos</h3>
-                <a href="#" class="mr-4">Twitter</a>
-                <a href="#" class="mr-4">Facebook</a>
-                <a href="#">Instagram</a>
+                <h4 class="font-bold">Merkuria Mazapanes</h4>
+                <p>Delicias artesanales desde 1990.</p>
             </div>
             <div>
-                <h3 class="font-bold">Enlaces útiles</h3>
-                <a href="#productos">Productos</a>
-                <a href="#contacto">Contacto</a>
-                <a href="#ubicacion">Ubicación</a>
+                <h4 class="font-bold">Información</h4>
+                <ul>
+                    <li><a href="#productos" class="hover:underline">Productos</a></li>
+                    <li><a href="#beneficios" class="hover:underline">Beneficios</a></li>
+                    <li><a href="#contact" class="hover:underline">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold">Contacto</h4>
+                <p>Email: contacto@mazapanes.com</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+            <div>
+                <h4 class="font-bold">Síguenos</h4>
+                <div class="flex space-x-2">
+                    <a href="#" aria-label="Facebook"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-5h-1v-2h1v-1c0-1.1.9-2 2-2h1v2h-1c-.6 0-1 .4-1 1v1h2l-1 2h-1v5z"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 100 20 10 10 0 000-20zm2 15.5h-4v-1h4v1zm0-2.5h-4v-1h4v1zm0-2.5h-4v-1h4v1zm0-2.5h-4v-1h4v1zm0-2.5h-4v-1h4v1z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 100 20 10 10 0 000-20zm3 15h-6v-1h6v1zm0-2h-6v-1h6v1zm0-2h-6v-1h6v1zm0-2h-6v-1h6v1zm0-2h-6v-1h6v1z"/></svg></a>
+                </div>
             </div>
         </div>
     </footer>
@@ -96,5 +191,4 @@
 
   <script src="main.js"></script>
 </body>
-
 </html>
