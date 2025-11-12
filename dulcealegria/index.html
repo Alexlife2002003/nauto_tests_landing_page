@@ -2,153 +2,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dulce Tentación - Pastelería artesanal con pasteles premium. Hacer tu pedido hoy.">
+    <meta name="description" content="Dulce Tentación - Pastelería artesanal con pasteles premium.">
     <link rel="canonical" href="https://www.dulcetentacion.com">
     <meta property="og:title" content="Dulce Tentación">
-    <meta property="og:description" content="Descubre nuestros pasteles artesanales.">
-    <meta property="og:image" content="placeholder-image.jpg">
+    <meta property="og:description" content="Deliciosos pasteles artesanales para cualquier ocasión.">
+    <meta property="og:image" content="placeholder_image_url">
     <meta property="og:url" content="https://www.dulcetentacion.com">
     <title>Dulce Tentación</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     
 
   <link rel="stylesheet" href="styles.css" /></head>
-<body class="font-sans bg-white text-gray-800">
-    <header class="sticky top-0 bg-white shadow-md z-10">
-        <nav class="container mx-auto flex justify-between items-center p-4">
-            <section aria-label="Hero" style="width:100%;margin:0;padding:96px 24px;background-image:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),url('https://images.pexels.com/photos/31846712/pexels-photo-31846712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');background-size:cover;background-position:center;background-repeat:no-repeat;display:block;"><div style="max-width:1200px;margin:0 auto;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.55)"><h1 class="text-xl font-bold">Dulce Tentación</h1></div></section>
-            <a href="#contact" class="cta bg-pink-500 text-white px-4 py-2 rounded">Hacer pedido</a>
+<body class="bg-white">
+    <header class="sticky top-0 bg-white shadow">
+        <nav class="flex justify-between p-4">
+            <h1 class="text-xl font-bold">Dulce Tentación</h1>
+            <a href="#contact" class="bg-pink-500 text-white py-2 px-4 rounded">Hacer pedido</a>
         </nav>
     </header>
     <main>
-        <section class="hero-bg text-center py-20">
-            <div class="container mx-auto">
-                <h2 class="text-4xl font-bold mb-2">Pasteles Artesanales</h2>
-                <p class="text-lg mb-6">Hechos con amor y los mejores ingredientes.</p>
-                <a href="#contact" class="cta bg-pink-500 text-white px-6 py-3 rounded">Hacer pedido</a>
-            </div>
+        <section class="hero-bg py-20 text-center">
+            <h2 class="text-4xl font-bold mb-2">Pasteles Premium Hechos con Amor</h2>
+            <p class="text-lg mb-4">Cada bocado es una experiencia única.</p>
+            <a href="#contact" class="bg-pink-500 text-white py-3 px-6 rounded">Hacer pedido</a>
         </section>
-        <section class="section-bg py-10">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="rounded-lg shadow-lg p-4 bg-white">
-                    <h3 class="font-semibold">Chocolate</h3>
-                    <p>Delicioso pastel de chocolate con ganache.</p>
+        <section class="py-10">
+            <h3 class="text-2xl text-center mb-6">Categorías de Pasteles</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card bg-white rounded-lg p-4 shadow">
+                    <h4 class="font-semibold">Chocolate</h4>
+                    <p>Delicioso pastel de chocolate negro.</p>
                     <p class="font-bold">$25</p>
                 </div>
-                <div class="rounded-lg shadow-lg p-4 bg-white">
-                    <h3 class="font-semibold">Frutas</h3>
-                    <p>Pastel fresco de frutas de temporada.</p>
+                <div class="card bg-white rounded-lg p-4 shadow">
+                    <h4 class="font-semibold">Frutas</h4>
+                    <p>Pastel fresco con frutas de temporada.</p>
                     <p class="font-bold">$30</p>
                 </div>
-                <div class="rounded-lg shadow-lg p-4 bg-white">
-                    <h3 class="font-semibold">Red Velvet</h3>
-                    <p>Pastel suave y esponjoso con crema de queso.</p>
+                <div class="card bg-white rounded-lg p-4 shadow">
+                    <h4 class="font-semibold">Red Velvet</h4>
+                    <p>Suave y esponjoso, con un toque de vainilla.</p>
                     <p class="font-bold">$28</p>
                 </div>
-                <div class="rounded-lg shadow-lg p-4 bg-white">
-                    <h3 class="font-semibold">Tres Leches</h3>
-                    <p>Tradicional pastel húmedo y dulce.</p>
-                    <p class="font-bold">$22</p>
+                <div class="card bg-white rounded-lg p-4 shadow">
+<img src="https://images.pexels.com/photos/4502964/pexels-photo-4502964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Testimonios image" loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+
+<img src="https://images.pexels.com/photos/12566548/pexels-photo-12566548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Ingredientes y Proceso Artesanal image" loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+
+                    <h4 class="font-semibold">Tres Leches</h4>
+                    <p>Un clásico que no puedes dejar pasar.</p>
+                    <p class="font-bold">$32</p>
                 </div>
             </div>
         </section>
         <section class="py-10">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-4">Ingredientes y Proceso Artesanal</h2>
-                <p>Utilizamos solo los mejores ingredientes, siguiendo un proceso artesanal para garantizar la calidad.</p>
+            <h3 class="text-2xl text-center mb-6">Ingredientes y Proceso Artesanal</h3>
+            <p class="text-center">Utilizamos ingredientes frescos y de alta calidad en cada pastel.</p>
+        </section>
+        <section class="py-10">
+            <h3 class="text-2xl text-center mb-6">Testimonios</h3>
+            <div class="flex justify-center">
+<img src="https://images.pexels.com/photos/33551333/pexels-photo-33551333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Galería image" loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+<div class='grid grid-cols-2 md:grid-cols-3 gap-4 my-6'><img src='https://images.pexels.com/photos/6666661/pexels-photo-6666661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' alt='Gallery image' loading='lazy' class='w-full h-44 object-cover rounded-xl'/><img src='https://images.pexels.com/photos/9499092/pexels-photo-9499092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' alt='Gallery image' loading='lazy' class='w-full h-44 object-cover rounded-xl'/><img src='https://images.pexels.com/photos/32767092/pexels-photo-32767092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' alt='Gallery image' loading='lazy' class='w-full h-44 object-cover rounded-xl'/></div>
+
+
+                <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
+                <p class="ml-2">"Los mejores pasteles que he probado!"</p>
             </div>
         </section>
         <section class="py-10">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-4">Testimonios</h2>
-                <div class="flex justify-center space-x-4">
-                    <div class="rounded-lg shadow-lg p-4 bg-white">
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <p>¡Los mejores pasteles que he probado!</p>
-                    </div>
-                    <div class="rounded-lg shadow-lg p-4 bg-white">
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <p>Increíble sabor y presentación.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-10">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-4">Galería</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <div class="rounded-lg shadow-lg bg-gray-200 h-32"></div>
-                    <div class="rounded-lg shadow-lg bg-gray-200 h-32"></div>
-                    <div class="rounded-lg shadow-lg bg-gray-200 h-32"></div>
-                </div>
+            <h3 class="text-2xl text-center mb-6">Galería</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <div class="bg-gray-200 h-32 rounded-lg"></div>
+                <div class="bg-gray-200 h-32 rounded-lg"></div>
+                <div class="bg-gray-200 h-32 rounded-lg"></div>
+                <div class="bg-gray-200 h-32 rounded-lg"></div>
+                <div class="bg-gray-200 h-32 rounded-lg"></div>
+                <div class="bg-gray-200 h-32 rounded-lg">
+<img src="https://images.pexels.com/photos/15641300/pexels-photo-15641300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Ubicación image" loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+
+<img src="https://images.pexels.com/photos/7319297/pexels-photo-7319297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contáctanos image" loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+</div>
             </div>
         </section>
         <section id="contact" class="py-10">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
-                <form class="space-y-4">
-                    <label for="name" class="block">Nombre:</label>
-                    <input type="text" id="name" class="w-full border rounded p-2" required>
-
-                    <label for="email" class="block">Correo Electrónico:</label>
-                    <input type="email" id="email" class="w-full border rounded p-2" required>
-
-                    <label for="phone" class="block">Teléfono:</label>
-                    <input type="tel" id="phone" class="w-full border rounded p-2" required>
-
-                    <label for="select" class="block">Selecciona un pastel:</label>
-                    <select id="select" class="w-full border rounded p-2" required>
-                        <option value="">Elige un pastel</option>
-                        <option value="chocolate">Chocolate</option>
-                        <option value="frutas">Frutas</option>
-                        <option value="red-velvet">Red Velvet</option>
-                        <option value="tres-leches">Tres Leches</option>
-                    </select>
-
-                    <button type="submit" class="cta bg-pink-500 text-white px-6 py-3 rounded w-full">Enviar</button>
-                </form>
-            </div>
+            <h3 class="text-2xl text-center mb-6">Contáctanos</h3>
+            <form class="max-w-md mx-auto">
+                <label class="block mb-2" for="name">Nombre</label>
+                <input class="w-full p-2 border rounded mb-4" type="text" id="name" required>
+                <label class="block mb-2" for="email">Correo Electrónico</label>
+                <input class="w-full p-2 border rounded mb-4" type="email" id="email" required>
+                <label class="block mb-2" for="phone">Teléfono</label>
+                <input class="w-full p-2 border rounded mb-4" type="tel" id="phone" required>
+                <button type="submit" class="bg-pink-500 text-white py-2 px-4 rounded w-full">Enviar</button>
+            </form>
         </section>
         <section class="py-10">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-4">Ubicación</h2>
-                <p>📍 Dirección: Calle Falsa 123</p>
-                <p>📞 Teléfono: (123) 456-7890</p>
-                <p>🕰️ Horarios: Lunes a Sábado, 9am - 6pm</p>
-            </div>
+            <h3 class="text-2xl text-center mb-6">Ubicación</h3>
+            <p class="text-center">📍 Calle Falsa 123, Ciudad</p>
+            <p class="text-center">📞 (123) 456-7890</p>
+            <p class="text-center">🕰️ Lunes a Sábado, 9 AM - 6 PM</p>
         </section>
     </main>
-    <footer class="bg-gray-800 text-white py-10">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
             <div>
-                <h3 class="font-bold">Dulce Tentación</h3>
-                <p>Los mejores pasteles artesanales.</p>
+                <h4 class="font-bold">Dulce Tentación</h4>
+                <p>Pastelería artesanal.</p>
             </div>
             <div>
-                <h3 class="font-bold">Información</h3>
+                <h4 class="font-bold">Información</h4>
                 <ul>
-                    <li><a href="#" class="hover:underline">Sobre nosotros</a></li>
-                    <li><a href="#" class="hover:underline">Términos</a></li>
-                    <li><a href="#" class="hover:underline">Política de privacidad</a></li>
+                    <li><a href="#" class="text-gray-400">Sobre nosotros</a></li>
+                    <li><a href="#" class="text-gray-400">Política de privacidad</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="font-bold">Contacto</h3>
+                <h4 class="font-bold">Contacto</h4>
                 <ul>
-                    <li><a href="#contact" class="hover:underline">Contáctanos</a></li>
+                    <li><a href="#contact" class="text-gray-400">Contáctanos</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="font-bold">Redes Sociales</h3>
-                <div class="flex space-x-2">
-                    <a href="#" aria-label="Facebook"><svg class="w-6 h-6" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg></a>
-                    <a href="#" aria-label="Twitter"><svg class="w-6 h-6" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg></a>
-                    <a href="#" aria-label="Instagram"><svg class="w-6 h-6" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg></a>
-                </div>
+                <h4 class="font-bold">Redes Sociales</h4>
+                <a href="#" class="text-gray-400">Twitter</a>
+                <a href="#" class="text-gray-400">Facebook</a>
+                <a href="#" class="text-gray-400">Instagram</a>
             </div>
         </div>
     </footer>
+    
 
   <!-- Chatwoot -->
   
