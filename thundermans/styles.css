@@ -1,8 +1,8 @@
 body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: system-ui, sans-serif;
         }
         .hero {
-            background: linear-gradient(to right, #ff6f61, #de6e9b);
+            background: linear-gradient(to right, #ff6b6b, #f7b733);
         }
         .card {
             transition: transform 0.2s;
