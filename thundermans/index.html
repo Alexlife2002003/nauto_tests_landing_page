@@ -2,117 +2,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thundermans: Tu tienda de cómics favorita con una amplia selección de títulos.">
+    <meta name="description" content="Thundermans: tu tienda de cómics favorita. Encuentra los mejores títulos y productos relacionados con el mundo del cómic.">
     <link rel="canonical" href="https://thundermans.com">
     <meta property="og:title" content="Thundermans">
     <meta property="og:description" content="Tu tienda de cómics favorita.">
-    <meta property="og:image" content="https://source.unsplash.com/1536x1024/?comics,store">
-    <meta property="og:url" content="https://thundermans.com">
+    <meta property="og:image" content="https://unsplash.com/es/fotos/foto-timelapse-de-un-relampago--qWs2GFsyeg">
     <title>Thundermans</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     
 
   <link rel="stylesheet" href="styles.css" /></head>
 <body class="bg-gray-100">
-
-<header class="sticky top-0 bg-white shadow">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-        <h1 class="text-2xl font-bold text-blue-600">Thundermans</h1>
-        <ul class="flex space-x-4">
-            <li><a href="#features" class="text-gray-700 hover:text-blue-600">Características</a></li>
-            <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contacto</a></li>
-            <li><a href="#faq" class="text-gray-700 hover:text-blue-600">FAQ</a></li>
-            <li><a href="#location" class="text-blue-600 bg-blue-100 px-4 py-2 rounded">¡Compra Ahora!</a></li>
-        </ul>
+    <nav class="sticky top-0 bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Thundermans</h1>
+            <a href="#contact" class="cta bg-blue-600 text-white px-4 py-2 rounded">Contáctanos</a>
+        </div>
     </nav>
-</header>
-
-<main>
-    <section class="hero h-96 flex flex-col justify-center items-center text-white text-center">
-        <h2 class="text-4xl font-bold mb-2">¡Bienvenido a Thundermans!</h2>
-        <p class="mb-4">La mejor selección de cómics para todos los fanáticos.</p>
-        <a href="#contact" class="bg-blue-600 px-6 py-2 rounded hover:bg-blue-500">Explora Nuestros Títulos</a>
-    </section>
-
-    <section id="features" class="container mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white rounded-lg shadow-lg p-4">
-            <img src="https://source.unsplash.com/1024x1024/?comic" alt="Comic Feature 1" class="rounded-t-lg">
-            <h3 class="font-bold text-lg mt-2">Título 1</h3>
-            <p>Descripción breve del cómic 1.</p>
+    <header class="hero-bg h-96 flex flex-col justify-center items-center text-center text-white">
+        <h2 class="text-5xl font-extrabold">¡Bienvenido a Thundermans!</h2>
+        <p class="mt-4 text-lg">Tu tienda de cómics favorita, donde los héroes cobran vida.</p>
+        <div class="mt-6">
+            <a href="#products" class="cta bg-yellow-500 text-black px-4 py-2 rounded">Explora Productos</a>
         </div>
-        <div class="bg-white rounded-lg shadow-lg p-4">
-            <img src="https://source.unsplash.com/1024x1024/?comic" alt="Comic Feature 2" class="rounded-t-lg">
-            <h3 class="font-bold text-lg mt-2">Título 2</h3>
-            <p>Descripción breve del cómic 2.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg p-4">
-            <img src="https://source.unsplash.com/1024x1024/?comic" alt="Comic Feature 3" class="rounded-t-lg">
-            <h3 class="font-bold text-lg mt-2">Título 3</h3>
-            <p>Descripción breve del cómic 3.</p>
+    </header>
+    <section id="products" class="container mx-auto my-12">
+        <h3 class="text-3xl font-bold text-center mb-6">Nuestros Productos</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <img src="https://unsplash.com/es/fotos/comic-de-the-walking-dead-d2Py_uhXJQo" alt="Comic de The Walking Dead" class="rounded mb-4">
+                <h4 class="font-bold">The Walking Dead</h4>
+                <ul class="list-disc pl-5">
+                    <li>Historia emocionante</li>
+                    <li>Personajes inolvidables</li>
+                    <li>Edición limitada</li>
+                </ul>
+                <a href="#" class="cta bg-blue-600 text-white px-4 py-2 rounded">Ver Más</a>
+            </div>
+            <!-- Repeat similar cards for other products -->
         </div>
     </section>
-
-    <section id="contact" class="container mx-auto my-10 p-4 bg-white rounded-lg shadow-lg">
-        <h2 class="text-2xl font-bold mb-4">Contáctanos</h2>
-        <form>
-            <label for="name" class="block mb-2">Nombre:</label>
-            <input type="text" id="name" class="w-full border rounded p-2 mb-4" required>
-            
-            <label for="email" class="block mb-2">Correo Electrónico:</label>
-            <input type="email" id="email" class="w-full border rounded p-2 mb-4" required>
-            
-            <label for="phone" class="block mb-2">Teléfono:</label>
-            <input type="tel" id="phone" class="w-full border rounded p-2 mb-4" required>
-            
-            <label for="location" class="block mb-2">Ubicación:</label>
-            <select id="location" class="w-full border rounded p-2 mb-4">
-                <option value="local">Local</option>
-                <option value="online">Online</option>
-            </select>
-            
-            <button type="submit" class="w-full bg-blue-600 text-white rounded p-2 hover:bg-blue-500">Enviar</button>
+    <section class="bg-gray-200 py-12">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold text-center mb-6">Servicios y Beneficios</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex items-center bg-white rounded-lg shadow-lg p-4">
+                    <svg class="w-8 h-8 text-blue-600 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"/></svg>
+                    <div>
+                        <h4 class="font-bold">Variedad de Títulos</h4>
+                        <p>Encuentra cómics de todos los géneros.</p>
+                    </div>
+                </div>
+                <!-- Repeat similar cards for other services -->
+            </div>
+        </div>
+    </section>
+    <section class="py-12">
+        <h3 class="text-3xl font-bold text-center mb-6">Clientes Satisfechos</h3>
+        <div class="flex justify-center space-x-4">
+            <img src="https://via.placeholder.com/100" alt="Logo Cliente 1" class="h-16">
+            <img src="https://via.placeholder.com/100" alt="Logo Cliente 2" class="h-16">
+            <img src="https://via.placeholder.com/100" alt="Logo Cliente 3" class="h-16">
+        </div>
+    </section>
+    <section id="contact" class="container mx-auto my-12">
+        <h3 class="text-3xl font-bold text-center mb-6">Contáctanos</h3>
+        <form class="bg-white rounded-lg shadow-lg p-6">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium">Nombre</label>
+                <input type="text" id="name" class="mt-1 block w-full border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium">Correo Electrónico</label>
+                <input type="email" id="email" class="mt-1 block w-full border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="block text-sm font-medium">Teléfono</label>
+                <input type="tel" id="phone" class="mt-1 block w-full border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="location" class="block text-sm font-medium">Ubicación</label>
+                <select id="location" class="mt-1 block w-full border-gray-300 rounded-md">
+                    <option value="local">Local</option>
+                    <option value="nacional">Nacional</option>
+                </select>
+            </div>
+            <button type="submit" class="cta bg-blue-600 text-white px-4 py-2 rounded w-full">Enviar</button>
         </form>
     </section>
-
-    <section id="faq" class="container mx-auto my-10">
-        <h2 class="text-2xl font-bold mb-4">Preguntas Frecuentes</h2>
-        <details class="mb-2">
-            <summary class="cursor-pointer">¿Cuál es el horario de la tienda?</summary>
-            <p class="pl-4">Estamos abiertos de 10 AM a 8 PM todos los días.</p>
+    <section class="py-12">
+        <h3 class="text-3xl font-bold text-center mb-6">Preguntas Frecuentes</h3>
+        <details class="mb-4">
+            <summary class="font-semibold">¿Qué tipos de cómics ofrecen?</summary>
+            <p>Ofrecemos cómics de diversos géneros, desde superhéroes hasta manga.</p>
         </details>
-        <details class="mb-2">
-            <summary class="cursor-pointer">¿Hacen envíos?</summary>
-            <p class="pl-4">Sí, realizamos envíos a nivel nacional.</p>
+        <details class="mb-4">
+            <summary class="font-semibold">¿Hacen envíos?</summary>
+            <p>Sí, realizamos envíos a nivel nacional.</p>
         </details>
     </section>
-</main>
-
-<footer class="bg-gray-800 text-white p-4">
-    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div>
-            <h3 class="font-bold">Thundermans</h3>
-            <p>Tu tienda de cómics favorita.</p>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div>
+                <h4 class="font-bold">Thundermans</h4>
+                <p>Tu tienda de cómics favorita.</p>
+            </div>
+            <div>
+                <h4 class="font-bold">Información</h4>
+                <ul>
+                    <li><a href="#" class="text-gray-400">Sobre Nosotros</a></li>
+                    <li><a href="#" class="text-gray-400">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold">Contacto</h4>
+                <ul>
+                    <li><a href="#" class="text-gray-400">Email</a></li>
+                    <li><a href="#" class="text-gray-400">Teléfono</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold">Redes Sociales</h4>
+                <a href="#" class="text-gray-400">Facebook</a>
+                <a href="#" class="text-gray-400">Twitter</a>
+            </div>
         </div>
-        <div>
-            <h3 class="font-bold">Información</h3>
-            <p><a href="#" class="text-blue-400">Política de Privacidad</a></p>
-            <p><a href="#" class="text-blue-400">Términos de Servicio</a></p>
-        </div>
-        <div>
-            <h3 class="font-bold">Contacto</h3>
-            <p>Email: contacto@thundermans.com</p>
-            <p>Teléfono: +123 456 7890</p>
-        </div>
-        <div>
-            <h3 class="font-bold">Redes Sociales</h3>
-            <p><a href="#" class="text-blue-400">Facebook</a></p>
-            <p><a href="#" class="text-blue-400">Instagram</a></p>
-        </div>
-    </div>
-</footer>
-
-
-
+    </footer>
 
   <!-- Chatwoot -->
   
