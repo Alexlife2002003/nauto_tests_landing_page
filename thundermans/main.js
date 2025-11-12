@@ -1,10 +1,10 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
-            console.log(`Clicked on ${this.innerText}`);
+            console.log('CTA clicked:', this.textContent);
         });
     });
 
