@@ -1,12 +1,9 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                console.log('CTA clicked:', this.textContent);
-            });
-        });
+function smoothScroll(target) {
+            document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+        }
+        function logClick(event) {
+            console.log(event.target.innerText + ' clicked');
+        }
 
 (function(d,t){
       var BASE_URL="https://app.chatwoot.com";
