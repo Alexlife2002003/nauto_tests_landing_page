@@ -2,130 +2,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pastelería Dulce Tentación - Deliciosos pasteles artesanales.">
+    <title>Dulce Tentación</title>
+    <meta name="description" content="Pastelería artesanal con pasteles premium y un proceso cuidado. Haz tu pedido hoy.">
     <link rel="canonical" href="https://www.dulcetentacion.com">
     <meta property="og:title" content="Dulce Tentación">
-    <meta property="og:description" content="Deliciosos pasteles artesanales.">
-    <meta property="og:image" content="placeholder-image.jpg">
+    <meta property="og:description" content="Pastelería artesanal con pasteles premium. Haz tu pedido hoy.">
+    <meta property="og:image" content="placeholder-image-url">
     <meta property="og:url" content="https://www.dulcetentacion.com">
-    <title>Dulce Tentación</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     
 
   <link rel="stylesheet" href="styles.css" /></head>
-<body class="bg-gray-100">
+<body class="bg-white text-gray-800">
 
-<header class="sticky-nav sticky top-0 z-10">
-    <nav class="flex justify-between items-center p-4 shadow">
-        <h1 class="text-xl font-bold">Dulce Tentación</h1>
-        <a href="#contact" class="cta-button px-4 py-2 rounded">Hacer pedido</a>
+<header class="sticky top-0 bg-white shadow">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold">Dulce Tentación</h1>
+        <a href="#order" class="bg-pink-500 text-white px-4 py-2 rounded">Hacer pedido</a>
     </nav>
 </header>
 
 <main>
-    <section class="hero p-10 text-center">
-        <h2 class="text-4xl font-bold mb-2">Bienvenidos a Dulce Tentación</h2>
-        <p class="mb-4">Pasteles artesanales hechos con amor y los mejores ingredientes.</p>
-        <a href="#productos" class="cta-button px-6 py-3 rounded">Explorar Pasteles</a>
+    <section class="hero py-20 text-center">
+        <h2 class="text-4xl font-bold mb-2">Pasteles Artesanales</h2>
+        <p class="mb-4">Descubre la dulzura de nuestros pasteles premium, elaborados con amor y dedicación.</p>
+        <a href="#order" class="bg-pink-500 text-white px-6 py-3 rounded">Hacer pedido</a>
     </section>
 
-    <section id="productos" class="p-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="card rounded bg-white p-4">
-<img src="https://images.pexels.com/photos/5897464/pexels-photo-5897464.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Imagen ilustrativa 1: Crea una landing page refinada para la pastelería “Dulce Tentación”. Usa paleta pastel (rosa suave, crema, dorado claro) para una vista limpia y elegante. Hero section con foto de calidad de un pastel premium, breve historia de la pastelería y CTA para “Hacer pedido”. Muestra categorías de pasteles (Chocolate, Frutas, Red Velvet, Tres Leches), cada una con breve descripción y precio. Incluye sección de ingredientes y proceso artesanal, testimonios con estrellas, galería pequeña, formulario de contacto, información de ubicación y horarios. Usa cartas redondas con sombras ligeras, tipografía elegante, optimizado para móvil. Agrega tags de Twitter, Facebook e Instagram." loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-semibold mb-6">Categorías de Pasteles</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+<img src="https://images.pexels.com/photos/839220/pexels-photo-839220.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Imagen ilustrativa 1: Crea una landing page refinada para la pastelería “Dulce Tentación”. Usa paleta pastel (rosa suave, crema, dorado claro) para una vista limpia y elegante. Hero section con foto de calidad de un pastel premium, breve historia de la pastelería y CTA para “Hacer pedido”. Muestra categorías de pasteles (Chocolate, Frutas, Red Velvet, Tres Leches), cada una con breve descripción y precio. Incluye sección de ingredientes y proceso artesanal, testimonios con estrellas, galería pequeña, formulario de contacto, información de ubicación y horarios. Usa cartas redondas con sombras ligeras, tipografía elegante, optimizado para móvil. Agrega tags de Twitter, Facebook e Instagram." loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
 
-            <h3 class="font-semibold">Chocolate</h3>
-            <p>Delicioso pastel de chocolate con cobertura suave.</p>
-            <p class="font-bold">$30</p>
-        </div>
-        <div class="card rounded bg-white p-4">
-<img src="https://images.pexels.com/photos/6633188/pexels-photo-6633188.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Imagen ilustrativa 2: Crea una landing page refinada para la pastelería “Dulce Tentación”. Usa paleta pastel (rosa suave, crema, dorado claro) para una vista limpia y elegante. Hero section con foto de calidad de un pastel premium, breve historia de la pastelería y CTA para “Hacer pedido”. Muestra categorías de pasteles (Chocolate, Frutas, Red Velvet, Tres Leches), cada una con breve descripción y precio. Incluye sección de ingredientes y proceso artesanal, testimonios con estrellas, galería pequeña, formulario de contacto, información de ubicación y horarios. Usa cartas redondas con sombras ligeras, tipografía elegante, optimizado para móvil. Agrega tags de Twitter, Facebook e Instagram." loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+                <h4 class="font-bold">Chocolate</h4>
+                <p>Delicioso pastel de chocolate con relleno cremoso.</p>
+                <p class="text-lg font-semibold">$25</p>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+<img src="https://images.pexels.com/photos/1485805/pexels-photo-1485805.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Imagen ilustrativa 2: Crea una landing page refinada para la pastelería “Dulce Tentación”. Usa paleta pastel (rosa suave, crema, dorado claro) para una vista limpia y elegante. Hero section con foto de calidad de un pastel premium, breve historia de la pastelería y CTA para “Hacer pedido”. Muestra categorías de pasteles (Chocolate, Frutas, Red Velvet, Tres Leches), cada una con breve descripción y precio. Incluye sección de ingredientes y proceso artesanal, testimonios con estrellas, galería pequeña, formulario de contacto, información de ubicación y horarios. Usa cartas redondas con sombras ligeras, tipografía elegante, optimizado para móvil. Agrega tags de Twitter, Facebook e Instagram." loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
 
-            <h3 class="font-semibold">Frutas</h3>
-            <p>Pastel fresco con frutas de temporada.</p>
-            <p class="font-bold">$35</p>
-        </div>
-        <div class="card rounded bg-white p-4">
-<img src="https://images.pexels.com/photos/7191162/pexels-photo-7191162.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Imagen ilustrativa 3: Crea una landing page refinada para la pastelería “Dulce Tentación”. Usa paleta pastel (rosa suave, crema, dorado claro) para una vista limpia y elegante. Hero section con foto de calidad de un pastel premium, breve historia de la pastelería y CTA para “Hacer pedido”. Muestra categorías de pasteles (Chocolate, Frutas, Red Velvet, Tres Leches), cada una con breve descripción y precio. Incluye sección de ingredientes y proceso artesanal, testimonios con estrellas, galería pequeña, formulario de contacto, información de ubicación y horarios. Usa cartas redondas con sombras ligeras, tipografía elegante, optimizado para móvil. Agrega tags de Twitter, Facebook e Instagram." loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
+                <h4 class="font-bold">Frutas</h4>
+                <p>Pastel fresco con frutas de temporada.</p>
+                <p class="text-lg font-semibold">$30</p>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+<img src="https://images.pexels.com/photos/30131920/pexels-photo-30131920.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Imagen ilustrativa 3: Crea una landing page refinada para la pastelería “Dulce Tentación”. Usa paleta pastel (rosa suave, crema, dorado claro) para una vista limpia y elegante. Hero section con foto de calidad de un pastel premium, breve historia de la pastelería y CTA para “Hacer pedido”. Muestra categorías de pasteles (Chocolate, Frutas, Red Velvet, Tres Leches), cada una con breve descripción y precio. Incluye sección de ingredientes y proceso artesanal, testimonios con estrellas, galería pequeña, formulario de contacto, información de ubicación y horarios. Usa cartas redondas con sombras ligeras, tipografía elegante, optimizado para móvil. Agrega tags de Twitter, Facebook e Instagram." loading="lazy" class="w-full h-40 object-cover rounded-t-xl"/>
 
-            <h3 class="font-semibold">Red Velvet</h3>
-            <p>Pastel rojo aterciopelado con crema de queso.</p>
-            <p class="font-bold">$40</p>
-        </div>
-        <div class="card rounded bg-white p-4">
-            <h3 class="font-semibold">Tres Leches</h3>
-            <p>Pastel suave empapado en tres tipos de leche.</p>
-            <p class="font-bold">$32</p>
-        </div>
-    </section>
-
-    <section class="p-10">
-        <h2 class="text-2xl font-bold mb-4">Ingredientes y Proceso Artesanal</h2>
-        <p>Utilizamos solo los mejores ingredientes naturales y un proceso artesanal para cada pastel.</p>
-    </section>
-
-    <section class="p-10">
-        <h2 class="text-2xl font-bold mb-4">Testimonios</h2>
-        <p>⭐⭐⭐⭐⭐ "Los mejores pasteles que he probado!" - Cliente Satisfecho</p>
-    </section>
-
-    <section class="p-10">
-        <h2 class="text-2xl font-bold mb-4">Galería</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="card rounded bg-white p-2">[Imagen]</div>
-            <div class="card rounded bg-white p-2">[Imagen]</div>
-            <div class="card rounded bg-white p-2">[Imagen]</div>
-            <div class="card rounded bg-white p-2">[Imagen]</div>
+                <h4 class="font-bold">Red Velvet</h4>
+                <p>Suave pastel de terciopelo rojo con glaseado de queso crema.</p>
+                <p class="text-lg font-semibold">$28</p>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg p-4">
+                <h4 class="font-bold">Tres Leches</h4>
+                <p>Tradicional pastel húmedo de tres leches.</p>
+                <p class="text-lg font-semibold">$22</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="p-10">
-        <h2 class="text-2xl font-bold mb-4">Contáctanos</h2>
-        <form class="flex flex-col space-y-4">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" class="border rounded p-2" required>
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" class="border rounded p-2" required>
-            <label for="phone">Teléfono:</label>
-            <input type="tel" id="phone" class="border rounded p-2" required>
-            <label for="message">Mensaje:</label>
-            <textarea id="message" class="border rounded p-2" required></textarea>
-            <button type="submit" class="cta-button px-6 py-3 rounded">Enviar</button>
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-semibold mb-6">Nuestro Proceso Artesanal</h3>
+        <p>Utilizamos ingredientes frescos y de alta calidad, siguiendo un proceso artesanal para cada pastel.</p>
+    </section>
+
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-semibold mb-6">Testimonios</h3>
+        <div class="flex flex-col space-y-4">
+            <div class="flex items-center">
+                <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+                <p class="ml-2">"Los mejores pasteles que he probado!"</p>
+            </div>
+            <div class="flex items-center">
+                <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+                <p class="ml-2">"Increíble sabor y presentación."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-semibold mb-6">Contáctanos</h3>
+        <form id="contact-form" class="bg-gray-100 p-6 rounded-lg">
+            <label for="name" class="block mb-2">Nombre:</label>
+            <input type="text" id="name" name="name" class="w-full p-2 mb-4 border rounded" required>
+            <label for="email" class="block mb-2">Email:</label>
+            <input type="email" id="email" name="email" class="w-full p-2 mb-4 border rounded" required>
+            <label for="phone" class="block mb-2">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" class="w-full p-2 mb-4 border rounded" required>
+            <button type="submit" class="bg-pink-500 text-white px-4 py-2 rounded">Enviar</button>
         </form>
     </section>
 
-    <section class="p-10">
-        <h2 class="text-2xl font-bold mb-4">Ubicación</h2>
-        <p>📍 Calle Falsa 123</p>
+    <section class="container mx-auto py-10">
+        <h3 class="text-3xl font-semibold mb-6">Ubicación</h3>
+        <p>📍 Calle Falsa 123, Ciudad</p>
         <p>📞 123-456-7890</p>
-        <p>🕰️ Lunes a Viernes: 9am - 6pm</p>
+        <p>🕰️ Lunes a Sábado: 9am - 7pm</p>
     </section>
 </main>
 
-<footer class="bg-gray-800 text-white p-10">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
         <div>
-            <h3 class="font-bold">Dulce Tentación</h3>
-            <p>Los mejores pasteles artesanales.</p>
+            <h4 class="font-bold">Dulce Tentación</h4>
+            <p>La dulzura de la vida en cada bocado.</p>
         </div>
         <div>
-            <h3 class="font-bold">Información</h3>
+            <h4 class="font-bold">Información</h4>
             <ul>
-                <li><a href="#" class="text-gray-400">Sobre nosotros</a></li>
-                <li><a href="#" class="text-gray-400">Política de privacidad</a></li>
+                <li><a href="#!" class="hover:underline">Sobre nosotros</a></li>
+                <li><a href="#!" class="hover:underline">Política de privacidad</a></li>
             </ul>
         </div>
         <div>
-            <h3 class="font-bold">Contacto</h3>
+            <h4 class="font-bold">Contacto</h4>
             <ul>
-                <li><a href="#" class="text-gray-400">Soporte</a></li>
-                <li><a href="#" class="text-gray-400">FAQs</a></li>
+                <li><a href="#!" class="hover:underline">Soporte</a></li>
+                <li><a href="#!" class="hover:underline">FAQ</a></li>
             </ul>
         </div>
         <div>
-            <h3 class="font-bold">Redes Sociales</h3>
-            <a href="#" class="text-gray-400">Twitter</a>
-            <a href="#" class="text-gray-400">Facebook</a>
-            <a href="#" class="text-gray-400">Instagram</a>
+            <h4 class="font-bold">Redes Sociales</h4>
+            <a href="#!" class="inline-block mr-2"><svg width="24" height="24"><circle cx="12" cy="12" r="10" fill="#3b5998"/></svg></a>
+            <a href="#!" class="inline-block mr-2"><svg width="24" height="24"><circle cx="12" cy="12" r="10" fill="#1DA1F2"/></svg></a>
+            <a href="#!" class="inline-block"><svg width="24" height="24"><circle cx="12" cy="12" r="10" fill="#E1306C"/></svg></a>
         </div>
     </div>
 </footer>
