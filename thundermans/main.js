@@ -1,24 +1,22 @@
-document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            target.scrollIntoView({ behavior: 'smooth' });
-            console.log('CTA clicked: ', this.textContent);
+document.addEventListener('DOMContentLoaded', function() {
+            const ctas = document.querySelectorAll('.cta');
+            ctas.forEach(cta => {
+                cta.addEventListener('click', () => console.log('CTA clicked!'));
+            });
         });
-    });
 
 (function(d,t){
-      var BASE_URL = "https://app.chatwoot.com";
-      var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      g.src = BASE_URL + "/packs/js/sdk.js";
-      g.async = true;
-      s.parentNode.insertBefore(g, s);
-      g.onload = function() {
+      var BASE_URL="https://app.chatwoot.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.async=true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
         if (window.chatwootSDK) {
           window.chatwootSDK.run({
-            websiteToken: "vdTKwXXuTyNw7QujBGyQ7K8n",
-            baseUrl: BASE_URL
+            websiteToken:"vdTKwXXuTyNw7QujBGyQ7K8n",
+            baseUrl:BASE_URL
           });
         }
       };
-    })(document, "script");
+    })(document,"script");
