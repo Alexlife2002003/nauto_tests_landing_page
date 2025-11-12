@@ -1,30 +1,14 @@
-:root {
-            --color-principal: #d2b48c;
-            --color-secundario: #f5f5f5;
-            --color-texto: #333;
+body {
+            font-family: system-ui, sans-serif;
+            background-color: #f9f9f9;
         }
-
-        body {
-            font-family: 'Arial', sans-serif;
-        }
-
-        nav {
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
         .hero {
-            background: linear-gradient(to right, var(--color-principal), var(--color-secundario));
+            background-color: #f3e5ab;
+            background-image: linear-gradient(to right, #f3e5ab, #e8cba5);
         }
-
         .card {
-            border-radius: 15px;
-            transition: transform 0.3s;
+            transition: transform 0.2s;
         }
-
         .card:hover {
-            transform: scale(1.05);
-        }
-
-        footer {
-            background-color: var(--color-principal);
+            transform: translateY(-5px);
         }
