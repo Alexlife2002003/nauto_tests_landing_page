@@ -1,6 +1,5 @@
-.hero-bg {
-            background: linear-gradient(to right, #f8d9e1, #fff);
-        }
-        .section-bg {
-            background-color: #fef9e7;
-        }
+body { font-family: system-ui, sans-serif; }
+        .hero-bg { background: linear-gradient(to right, #f8e3e3, #fff); }
+        .card { transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .divider { height: 1px; background-color: #f0e0d6; }
