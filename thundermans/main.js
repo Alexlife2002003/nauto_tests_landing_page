@@ -1,9 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-            const ctas = document.querySelectorAll('.cta');
-            ctas.forEach(cta => {
-                cta.addEventListener('click', () => {
-                    console.log('CTA clicked!');
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
                 });
+                console.log('CTA clicked:', this.innerText);
             });
         });
 
