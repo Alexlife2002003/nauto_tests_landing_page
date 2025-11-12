@@ -1,15 +1,16 @@
 body {
             font-family: system-ui, sans-serif;
         }
-
         .hero {
-            background: linear-gradient(to bottom right, #f9f9f9, #f4e1d5);
+            background: linear-gradient(to bottom right, #f8e1e1, #fff);
         }
-
         .card {
-            transition: transform 0.2s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-
-        .card:hover {
-            transform: translateY(-5px);
+        .sticky-nav {
+            background-color: #fff;
+        }
+        .cta-button {
+            background-color: #f6c5c5;
+            color: #333;
         }
