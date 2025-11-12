@@ -1,0 +1,140 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thundermans: Tu tienda de cómics favorita con una amplia selección de títulos.">
+    <link rel="canonical" href="https://thundermans.com">
+    <meta property="og:title" content="Thundermans - Tienda de Cómics">
+    <meta property="og:description" content="Descubre los mejores cómics en Thundermans.">
+    <meta property="og:image" content="https://source.unsplash.com/1536x1024/?comics,store">
+    <title>thundermans2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+  <link rel="stylesheet" href="styles.css" /></head>
+<body class="flex flex-col">
+
+<header class="sticky top-0 bg-white shadow">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold text-secondary-color">Thundermans</h1>
+        <ul class="flex space-x-4">
+            <li><a href="#features" class="text-secondary-color hover:text-primary-color">Características</a></li>
+            <li><a href="#contact" class="text-secondary-color hover:text-primary-color">Contacto</a></li>
+            <li><a href="#faq" class="text-secondary-color hover:text-primary-color">FAQ</a></li>
+        </ul>
+        <a href="#contact" class="bg-primary-color text-white py-2 px-4 rounded">¡Compra Ahora!</a>
+    </nav>
+</header>
+
+<main class="flex-grow">
+    <section class="hero bg-cover bg-center h-screen" style="background-image: url('https://source.unsplash.com/1536x1024/?comics,store');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <div class="text-center text-white">
+                <h2 class="text-5xl font-bold">¡Bienvenido a Thundermans!</h2>
+                <p class="mt-4 text-lg">Tu tienda de cómics favorita con una amplia selección de títulos.</p>
+                <div class="mt-6">
+                    <a href="#features" class="bg-primary-color text-white py-2 px-4 rounded">Explora</a>
+                    <a href="#contact" class="bg-white text-primary-color py-2 px-4 rounded">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="container mx-auto py-16">
+        <h3 class="text-3xl font-bold text-secondary-color text-center">Características</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div class="bg-white rounded-lg shadow p-6">
+                <img src="https://source.unsplash.com/1024x1024/?comic" alt="Comic Feature" class="w-full rounded mb-4">
+                <h4 class="text-xl font-semibold">Variedad de Títulos</h4>
+                <p>Encuentra cómics de todos los géneros y estilos.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <img src="https://source.unsplash.com/1024x1024/?comic" alt="Comic Feature" class="w-full rounded mb-4">
+                <h4 class="text-xl font-semibold">Novedades Semanales</h4>
+                <p>Siempre algo nuevo para descubrir cada semana.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <img src="https://source.unsplash.com/1024x1024/?comic" alt="Comic Feature" class="w-full rounded mb-4">
+                <h4 class="text-xl font-semibold">Eventos Especiales</h4>
+                <p>Participa en nuestras firmas de autógrafos y lanzamientos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mx-auto py-16">
+        <h3 class="text-3xl font-bold text-secondary-color text-center">Contáctanos</h3>
+        <form class="mt-8" action="#" method="POST">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="name" class="block mb-2">Nombre:</label>
+                    <input type="text" id="name" name="name" required class="border rounded w-full p-2">
+                </div>
+                <div>
+                    <label for="email" class="block mb-2">Email:</label>
+                    <input type="email" id="email" name="email" required class="border rounded w-full p-2">
+                </div>
+                <div>
+                    <label for="phone" class="block mb-2">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" class="border rounded w-full p-2">
+                </div>
+                <div>
+                    <label for="location" class="block mb-2">Ubicación:</label>
+                    <select id="location" name="location" class="border rounded w-full p-2">
+                        <option value="store">Tienda</option>
+                        <option value="online">Online</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="mt-4 bg-primary-color text-white py-2 px-4 rounded">Enviar</button>
+        </form>
+    </section>
+
+    <section id="faq" class="container mx-auto py-16">
+        <h3 class="text-3xl font-bold text-secondary-color text-center">Preguntas Frecuentes</h3>
+        <div class="mt-8">
+            <details class="mb-4">
+                <summary class="cursor-pointer">¿Hacen envíos a domicilio?</summary>
+                <p class="mt-2">Sí, ofrecemos envíos a todo el país.</p>
+            </details>
+            <details class="mb-4">
+                <summary class="cursor-pointer">¿Puedo devolver un cómic?</summary>
+                <p class="mt-2">Sí, aceptamos devoluciones dentro de los 30 días.</p>
+            </details>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-secondary-color text-white py-8">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div>
+            <h4 class="font-bold">Thundermans</h4>
+            <p>Tu tienda de cómics favorita.</p>
+        </div>
+        <div>
+            <h4 class="font-bold">Información</h4>
+            <ul>
+                <li><a href="#" class="hover:underline">Sobre Nosotros</a></li>
+                <li><a href="#" class="hover:underline">Términos de Servicio</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold">Contacto</h4>
+            <p>Email: contacto@thundermans.com</p>
+            <p>Teléfono: 123-456-7890</p>
+        </div>
+        <div>
+            <h4 class="font-bold">Redes Sociales</h4>
+            <p><a href="#" class="hover:underline">Facebook</a></p>
+            <p><a href="#" class="hover:underline">Instagram</a></p>
+        </div>
+    </div>
+</footer>
+
+
+
+  <!-- Chatwoot -->
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
