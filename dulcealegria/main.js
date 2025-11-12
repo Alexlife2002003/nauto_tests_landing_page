@@ -1,9 +1,11 @@
-function smoothScroll(target) {
-            document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
-        }
-        function logClick(event) {
-            console.log(event.target.innerText + ' clicked');
-        }
+document.addEventListener('DOMContentLoaded', function() {
+            const ctas = document.querySelectorAll('.cta');
+            ctas.forEach(cta => {
+                cta.addEventListener('click', () => {
+                    console.log('CTA clicked:', cta.innerText);
+                });
+            });
+        });
 
 (function(d,t){
       var BASE_URL="https://app.chatwoot.com";
