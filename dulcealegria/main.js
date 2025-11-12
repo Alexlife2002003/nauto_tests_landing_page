@@ -1,6 +1,14 @@
-document.querySelectorAll('.cta-button').forEach(button => {
-        button.addEventListener('click', () => {
-            console.log('CTA clicked');
+$(document).ready(function() {
+        $('a[href^="#"]').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+
+        $('#contact-form').on('submit', function(e) {
+            e.preventDefault();
+            console.log('Form submitted');
         });
     });
 
