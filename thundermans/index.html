@@ -2,149 +2,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thundermans - Tu tienda de cómics favorita. Encuentra los mejores títulos y productos relacionados.">
+    <meta name="description" content="Thundermans: Tu tienda de cómics favorita. Encuentra tus títulos favoritos y descubre lo último en el mundo del cómic.">
     <link rel="canonical" href="https://thundermans.com">
     <meta property="og:title" content="Thundermans">
-    <meta property="og:description" content="Tu tienda de cómics favorita.">
-    <meta property="og:image" content="https://unsplash.com/es/fotos/foto-timelapse-de-un-relampago--qWs2GFsyeg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Thundermans">
-    <meta name="twitter:description" content="Tu tienda de cómics favorita.">
-    <meta name="twitter:image" content="https://unsplash.com/es/fotos/foto-timelapse-de-un-relampago--qWs2GFsyeg">
+    <meta property="og:description" content="Tu tienda de cómics favorita. Encuentra tus títulos favoritos y descubre lo último en el mundo del cómic.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thundermans.com">
+    <meta property="og:image" content="https://example.com/thumbnail.jpg">
     <title>Thundermans</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     
 
   <link rel="stylesheet" href="styles.css" /></head>
 <body class="bg-gray-100">
-    <header class="sticky top-0 bg-white shadow">
-        <nav class="container mx-auto flex justify-between items-center p-4">
-            <h1 class="text-3xl font-bold text-blue-600">Thundermans</h1>
-            <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">¡Compra Ahora!</a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero h-96 flex flex-col justify-center items-center text-center text-white">
-            <h2 class="text-5xl font-extrabold">¡Los Mejores Cómics!</h2>
-            <p class="mt-2 text-lg">Explora nuestra colección de cómics únicos y emocionantes.</p>
-            <a href="#products" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Ver Productos</a>
-        </section>
-        <section id="products" class="container mx-auto p-6">
-            <h3 class="text-3xl font-bold mb-4">Productos Destacados</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-lg p-4">
-                    <h4 class="font-bold">Cómic de Ejemplo 1</h4>
-                    <ul class="list-disc pl-5">
-                        <li>Descripción breve 1</li>
-                        <li>Descripción breve 2</li>
-                    </ul>
-                    <a href="#" class="text-blue-600 hover:underline">Más Información</a>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg p-4">
-                    <h4 class="font-bold">Cómic de Ejemplo 2</h4>
-                    <ul class="list-disc pl-5">
-                        <li>Descripción breve 1</li>
-                        <li>Descripción breve 2</li>
-                    </ul>
-                    <a href="#" class="text-blue-600 hover:underline">Más Información</a>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg p-4">
-                    <h4 class="font-bold">Cómic de Ejemplo 3</h4>
-                    <ul class="list-disc pl-5">
-                        <li>Descripción breve 1</li>
-                        <li>Descripción breve 2</li>
-                    </ul>
-                    <a href="#" class="text-blue-600 hover:underline">Más Información</a>
-                </div>
-            </div>
-        </section>
-        <section class="container mx-auto p-6">
-            <h3 class="text-3xl font-bold mb-4">Beneficios de Nuestros Cómics</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="flex items-center bg-white rounded-lg shadow-lg p-4">
-                    <svg class="w-6 h-6 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-                    <p>Acceso a títulos exclusivos.</p>
-                </div>
-                <div class="flex items-center bg-white rounded-lg shadow-lg p-4">
-                    <svg class="w-6 h-6 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-                    <p>Descuentos en compras futuras.</p>
-                </div>
-                <div class="flex items-center bg-white rounded-lg shadow-lg p-4">
-                    <svg class="w-6 h-6 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-                    <p>Participación en eventos exclusivos.</p>
-                </div>
-            </div>
-        </section>
-        <section class="bg-gray-200 py-6">
-            <h3 class="text-3xl font-bold text-center">Clientes Satisfechos</h3>
-            <div class="flex justify-center space-x-4">
-                <div class="bg-white rounded-full shadow-lg p-4">Cliente 1</div>
-                <div class="bg-white rounded-full shadow-lg p-4">Cliente 2</div>
-                <div class="bg-white rounded-full shadow-lg p-4">Cliente 3</div>
-            </div>
-        </section>
-        <section id="contact" class="container mx-auto p-6">
-            <h3 class="text-3xl font-bold mb-4">Contáctanos</h3>
-            <form class="bg-white rounded-lg shadow-lg p-6">
-                <label class="block mb-2" for="name">Nombre:</label>
-                <input class="w-full mb-4 p-2 border rounded" type="text" id="name" placeholder="Tu nombre" required>
-                
-                <label class="block mb-2" for="email">Correo Electrónico:</label>
-                <input class="w-full mb-4 p-2 border rounded" type="email" id="email" placeholder="Tu correo" required>
-                
-                <label class="block mb-2" for="phone">Teléfono:</label>
-                <input class="w-full mb-4 p-2 border rounded" type="tel" id="phone" placeholder="Tu teléfono" required>
-                
-                <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition" type="submit">Enviar</button>
-            </form>
-        </section>
-        <section class="bg-gray-100 py-6">
-            <h3 class="text-3xl font-bold text-center">Ubicación</h3>
-            <div class="container mx-auto text-center">
-                <p>📍 Calle Ejemplo 123</p>
-                <p>📞 555-1234</p>
-                <p>🕰️ Lunes a Viernes: 10am - 6pm</p>
-            </div>
-        </section>
-        <section class="py-6">
-            <h3 class="text-3xl font-bold text-center">Preguntas Frecuentes</h3>
-            <details class="my-2">
-                <summary class="cursor-pointer">¿Hacen envíos internacionales?</summary>
-                <p class="pl-4">Sí, realizamos envíos a varios países.</p>
-            </details>
-            <details class="my-2">
-                <summary class="cursor-pointer">¿Tienen descuentos por volumen?</summary>
-                <p class="pl-4">Sí, ofrecemos descuentos para compras al por mayor.</p>
-            </details>
-        </section>
-    </main>
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div>
-                <h4 class="font-bold">Thundermans</h4>
-                <p>Tu tienda de cómics favorita.</p>
-            </div>
-            <div>
-                <h4 class="font-bold">Información</h4>
-                <ul>
-                    <li><a href="#" class="hover:underline">Sobre Nosotros</a></li>
-                    <li><a href="#" class="hover:underline">Política de Devoluciones</a></li>
+
+<header class="sticky top-0 bg-white shadow">
+    <nav class="flex justify-between items-center p-4">
+        <h1 class="text-3xl font-bold text-blue-600">Thundermans</h1>
+        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded">Contáctanos</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero text-center p-20">
+        <h2 class="text-5xl font-extrabold text-white">¡Bienvenido a Thundermans!</h2>
+        <p class="text-lg text-white mt-4">Tu destino para todos los cómics que amas.</p>
+        <div class="mt-8">
+            <a href="#features" class="bg-white text-blue-600 px-6 py-3 rounded shadow">Explorar Cómics</a>
+            <a href="#services" class="bg-white text-blue-600 px-6 py-3 rounded shadow ml-4">Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <section id="features" class="p-10">
+        <h3 class="text-3xl font-bold text-center">Características</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="card bg-white rounded-lg p-6 shadow">
+                <h4 class="font-bold">Cómics Nuevos</h4>
+                <ul class="list-disc list-inside">
+                    <li>Últimos lanzamientos</li>
+                    <li>Ediciones limitadas</li>
+                    <li>Descuentos exclusivos</li>
                 </ul>
+                <a href="#" class="text-blue-600 font-bold">Ver más</a>
             </div>
-            <div>
-                <h4 class="font-bold">Contacto</h4>
-                <ul>
-                    <li><a href="#" class="hover:underline">Atención al Cliente</a></li>
-                    <li><a href="#" class="hover:underline">Soporte Técnico</a></li>
+            <div class="card bg-white rounded-lg p-6 shadow">
+                <h4 class="font-bold">Colecciones</h4>
+                <ul class="list-disc list-inside">
+                    <li>Clásicos atemporales</li>
+                    <li>Series populares</li>
+                    <li>Recomendaciones personalizadas</li>
                 </ul>
+                <a href="#" class="text-blue-600 font-bold">Ver más</a>
             </div>
-            <div>
-                <h4 class="font-bold">Redes Sociales</h4>
-                <a href="#" class="hover:underline">Facebook</a>
+            <div class="card bg-white rounded-lg p-6 shadow">
+                <h4 class="font-bold">Accesorios</h4>
+                <ul class="list-disc list-inside">
+                    <li>Figuras de acción</li>
+                    <li>Pósters y arte</li>
+                    <li>Merchandising exclusivo</li>
+                </ul>
+                <a href="#" class="text-blue-600 font-bold">Ver más</a>
             </div>
         </div>
-    </footer>
-    
+    </section>
+
+    <section id="services" class="p-10 bg-gray-200">
+        <h3 class="text-3xl font-bold text-center">Servicios</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="card bg-white rounded-lg p-6 shadow">
+                <div class="flex items-center">
+                    <span class="text-4xl">📦</span>
+                    <h4 class="font-bold ml-4">Envío Rápido</h4>
+                </div>
+                <p>Recibe tus cómics en la puerta de tu casa en tiempo récord.</p>
+            </div>
+            <div class="card bg-white rounded-lg p-6 shadow">
+                <div class="flex items-center">
+                    <span class="text-4xl">🛍️</span>
+                    <h4 class="font-bold ml-4">Compra Segura</h4>
+                </div>
+                <p>Transacciones seguras y protección de datos garantizada.</p>
+            </div>
+            <div class="card bg-white rounded-lg p-6 shadow">
+                <div class="flex items-center">
+                    <span class="text-4xl">💬</span>
+                    <h4 class="font-bold ml-4">Atención al Cliente</h4>
+                </div>
+                <p>Estamos aquí para ayudarte con cualquier consulta.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients" class="p-10 text-center">
+        <h3 class="text-3xl font-bold">Clientes Satisfechos</h3>
+        <div class="flex justify-center mt-6">
+            <span class="mx-2">🦸‍♂️</span>
+            <span class="mx-2">🦸‍♀️</span>
+            <span class="mx-2">🦹‍♂️</span>
+            <span class="mx-2">🦹‍♀️</span>
+        </div>
+    </section>
+
+    <section id="contact" class="p-10">
+        <h3 class="text-3xl font-bold text-center">Contáctanos</h3>
+        <form class="mt-6 max-w-lg mx-auto">
+            <label for="name" class="block mb-2">Nombre:</label>
+            <input type="text" id="name" name="name" required class="w-full p-2 border rounded mb-4">
+            
+            <label for="email" class="block mb-2">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required class="w-full p-2 border rounded mb-4">
+            
+            <label for="phone" class="block mb-2">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" class="w-full p-2 border rounded mb-4">
+            
+            <label for="select" class="block mb-2">Selecciona un Tema:</label>
+            <select id="select" name="select" class="w-full p-2 border rounded mb-4">
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="queja">Queja</option>
+            </select>
+            
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded w-full">Enviar</button>
+        </form>
+    </section>
+
+    <section id="location" class="p-10 bg-gray-200">
+        <h3 class="text-3xl font-bold text-center">Ubicación</h3>
+        <div class="text-center mt-6">
+            <p>📍 Calle Ficticia 123, Ciudad</p>
+            <p>📞 (123) 456-7890</p>
+            <p>🕰️ Lunes a Sábado, 10am - 8pm</p>
+        </div>
+    </section>
+
+    <section class="p-10">
+        <details>
+            <summary class="text-3xl font-bold">Preguntas Frecuentes</summary>
+            <p class="mt-2">¿Hacen envíos internacionales? Sí, realizamos envíos a varios países.</p>
+            <p class="mt-2">¿Tienen descuentos para estudiantes? Sí, ofrecemos un 10% de descuento.</p>
+        </details>
+    </section>
+</main>
+
+<footer class="bg-gray-800 text-white p-10">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div>
+            <h4 class="font-bold">Thundermans</h4>
+            <p>Tu tienda de cómics favorita.</p>
+        </div>
+        <div>
+            <h4 class="font-bold">Información</h4>
+            <ul>
+                <li><a href="#" class="text-blue-400">Sobre nosotros</a></li>
+                <li><a href="#" class="text-blue-400">Política de privacidad</a></li>
+                <li><a href="#" class="text-blue-400">Términos de servicio</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold">Contacto</h4>
+            <ul>
+                <li><a href="mailto:info@thundermans.com" class="text-blue-400">Email</a></li>
+                <li><a href="tel:+1234567890" class="text-blue-400">Teléfono</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold">Redes Sociales</h4>
+            <a href="#" class="text-blue-400">Facebook</a>
+        </div>
+    </div>
+</footer>
+
+
+
 
   <!-- Chatwoot -->
   
