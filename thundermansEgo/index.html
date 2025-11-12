@@ -1,0 +1,144 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thundermansEgo</title>
+    <meta name="description" content="Bienvenido a Thundermans, tu tienda de cómics favorita. Explora nuestros títulos y únete a nuestra comunidad.">
+    <link rel="canonical" href="https://thundermans.com">
+    <meta property="og:title" content="Thundermans - Tienda de Cómics">
+    <meta property="og:description" content="Descubre los mejores cómics en Thundermans.">
+    <meta property="og:image" content="https://source.unsplash.com/1536x1024/?comics,store">
+    <meta property="og:url" content="https://thundermans.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+  <link rel="stylesheet" href="styles.css" /></head>
+
+<body class="bg-gray-100">
+    <header class="sticky top-0 z-50 bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">Thundermans</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#features" class="text-gray-700 hover:text-gray-900">Características</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contacto</a></li>
+                <li><a href="#faq" class="text-gray-700 hover:text-gray-900">FAQ</a></li>
+                <li><a href="#location" class="text-white bg-primary-color px-4 py-2 rounded">¡Compra Ahora!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero h-screen flex items-center justify-center text-center">
+            <img src="https://source.unsplash.com/1536x1024/?comics" alt="Cómics de superhéroes" class="absolute inset-0 object-cover w-full h-full opacity-30">
+            <div class="relative z-10">
+                <h2 class="text-5xl font-extrabold text-white">¡Bienvenido a Thundermans!</h2>
+                <p class="text-lg text-white mt-2">Tu tienda de cómics favorita, donde la aventura comienza.</p>
+                <div class="mt-4">
+                    <a href="#contact" class="bg-primary-color text-white px-4 py-2 rounded">Explora Nuestros Títulos</a>
+                    <a href="#location" class="bg-white text-primary-color px-4 py-2 rounded ml-2">Ubicación</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container mx-auto my-12">
+            <h3 class="text-3xl font-bold text-center">Características</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <img src="https://source.unsplash.com/1024x1024/?comic" alt="Comic Feature" class="w-16 h-16 mb-4">
+                    <h4 class="font-semibold">Títulos Exclusivos</h4>
+                    <p>Encuentra cómics que no podrás conseguir en ningún otro lugar.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <img src="https://source.unsplash.com/1024x1024/?superhero" alt="Superhero Feature" class="w-16 h-16 mb-4">
+                    <h4 class="font-semibold">Nuevas Llegadas</h4>
+                    <p>Siempre tenemos las últimas novedades en nuestra tienda.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <img src="https://source.unsplash.com/1024x1024/?graphic-novel" alt="Graphic Novel Feature" class="w-16 h-16 mb-4">
+                    <h4 class="font-semibold">Novelas Gráficas</h4>
+                    <p>Explora una amplia selección de novelas gráficas y más.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-200 py-12">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl font-bold">Clientes Satisfechos</h3>
+                <div class="flex justify-center mt-6 space-x-4">
+                    <img src="https://source.unsplash.com/1024x1024/?logo,comic" alt="Logo 1" class="w-24 h-24">
+                    <img src="https://source.unsplash.com/1024x1024/?logo,store" alt="Logo 2" class="w-24 h-24">
+                    <img src="https://source.unsplash.com/1024x1024/?logo,shop" alt="Logo 3" class="w-24 h-24">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container mx-auto my-12">
+            <h3 class="text-3xl font-bold text-center">Contáctanos</h3>
+            <form class="bg-white p-6 rounded-lg shadow mt-6">
+                <label for="name" class="block mb-2">Nombre:</label>
+                <input type="text" id="name" name="name" class="w-full p-2 border rounded mb-4" required>
+                
+                <label for="email" class="block mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="w-full p-2 border rounded mb-4" required>
+                
+                <label for="phone" class="block mb-2">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" class="w-full p-2 border rounded mb-4" required>
+                
+                <label for="service" class="block mb-2">Selecciona un servicio:</label>
+                <select id="service" name="service" class="w-full p-2 border rounded mb-4">
+                    <option value="consulta">Consulta</option>
+                    <option value="pedido">Pedido</option>
+                    <option value="soporte">Soporte</option>
+                </select>
+                
+                <button type="submit" class="bg-primary-color text-white px-4 py-2 rounded w-full">Enviar</button>
+            </form>
+        </section>
+
+        <section id="faq" class="container mx-auto my-12">
+            <h3 class="text-3xl font-bold text-center">Preguntas Frecuentes</h3>
+            <details class="mt-4">
+                <summary class="cursor-pointer">¿Hacen envíos internacionales?</summary>
+                <p class="mt-2">Sí, hacemos envíos a varios países. Consulta nuestra sección de envíos para más información.</p>
+            </details>
+            <details class="mt-4">
+                <summary class="cursor-pointer">¿Puedo devolver un producto?</summary>
+                <p class="mt-2">Sí, aceptamos devoluciones dentro de los 30 días posteriores a la compra.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div>
+                <h4 class="font-bold">Thundermans</h4>
+                <p>Tu tienda de cómics favorita.</p>
+            </div>
+            <div>
+                <h4 class="font-bold">Información</h4>
+                <ul>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Sobre Nosotros</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold">Contacto</h4>
+                <p>Email: contacto@thundermans.com</p>
+            </div>
+            <div>
+                <h4 class="font-bold">Redes Sociales</h4>
+                <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+  <!-- Chatwoot -->
+  
+
+  <script src="main.js"></script>
+</body>
+
+</html>
