@@ -1,15 +1,6 @@
-body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+.hero-bg {
+            background: linear-gradient(to right, #f8d9e1, #fff);
         }
-        .hero {
-            background: linear-gradient(to bottom right, #f9f3e9, #f5e1d3);
-        }
-        .card {
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .divider {
-            border-top: 1px solid #e2e8f0;
+        .section-bg {
+            background-color: #fef9e7;
         }
