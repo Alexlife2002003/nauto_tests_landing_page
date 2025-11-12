@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
             const ctas = document.querySelectorAll('.cta');
             ctas.forEach(cta => {
-                cta.addEventListener('click', () => console.log('CTA clicked!'));
+                cta.addEventListener('click', () => {
+                    console.log('CTA clicked!');
+                });
             });
         });
 
