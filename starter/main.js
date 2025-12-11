@@ -7,7 +7,7 @@
       g.onload=function(){
         if (window.chatwootSDK) {
           window.chatwootSDK.run({
-            websiteToken:"vdTKwXXuTyNw7QujBGyQ7K8n",
+            websiteToken:"JwivGvHoav5RpDzZznbbQDnE",
             baseUrl:BASE_URL
           });
         }
