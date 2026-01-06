@@ -154,11 +154,33 @@
     </footer>
 
   <!-- Chatwoot -->
-  
-  <script src="main.js">
-      window.nautoConsoleSettings = {"position":"left","type":"expanded_bubble","launcherTitle":"Chat with us "};
-  
-  </script>
+    <script>
+  // 1️⃣ Widget settings (available before Chatwoot loads)
+  window.nautoConsoleSettings = {
+    position: "left",
+    type: "expanded_bubble",
+    launcherTitle: "Chat with us"
+  };
+
+  // 2️⃣ Chatwoot SDK loader
+  (function(d,t){
+    var BASE_URL = "https://console-test.nauto.la";
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.src = BASE_URL + "/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g, s);
+    g.onload = function () {
+      if (window.chatwootSDK) {
+        window.chatwootSDK.run({
+          websiteToken: "tKZckESgRozZCxUfsFZMPxgo",
+          baseUrl: BASE_URL
+        });
+      }
+    };
+  })(document, "script");
+</script>
+
 </body>
 
 </html>
