@@ -8,18 +8,16 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
             alert('Mensaje enviado con éxito!');
         });
 
-(function(d,t){
-      var BASE_URL="https://app.chatwoot.com";
-      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=BASE_URL+"/packs/js/sdk.js";
-      g.async=true;
-      s.parentNode.insertBefore(g,s);
-      g.onload=function(){
-        if (window.chatwootSDK) {
-          window.chatwootSDK.run({
-            websiteToken:"vdTKwXXuTyNw7QujBGyQ7K8n",
-            baseUrl:BASE_URL
-          });
-        }
-      };
-    })(document,"script");
+  (function(d,t) {
+    var BASE_URL="http://0.0.0.0:3000";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.nautoConsoleSDK.run({
+        websiteToken: 'NC2djJyq3ZykX41x1H59Lixb',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
